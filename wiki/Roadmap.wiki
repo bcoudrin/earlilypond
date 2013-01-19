@@ -3,10 +3,10 @@
 = Medieval =
 
 = Renaissance =
-* Couperin - 3e Leçons de Ténèbres
-* Forqueray - Pièces de Viole - 1e Suite
-* Telemann - 6e Nouveau Quatuor Parisien
-* Telemann - Concerto pour Flute à Bec et Viole de Gambe
+ * Couperin - 3e Leçons de Ténèbres
+ * Forqueray - Pièces de Viole - 1e Suite
+ * Telemann - 6e Nouveau Quatuor Parisien
+ * Telemann - Concerto pour Flute à Bec et Viole de Gambe
 
 = Baroque =
-* Ortiz - Trattado de Glosas
+ * Ortiz - Trattado de Glosas

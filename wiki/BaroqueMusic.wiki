@@ -2,4 +2,5 @@
 
 === Bellinzani, Follia ===
 Paolo Benedetto Bellinzani - Follia dalla Sonata XII in re minore per flauto e basso continuo
-- version originale : 
+ * [http://code.google.com/p/earlilypond/downloads/detail?name=follia-ut4.pdf original version]
+ * [http://code.google.com/p/earlilypond/downloads/detail?name=follia-ut3.pdf Recorder and Bass Viol]

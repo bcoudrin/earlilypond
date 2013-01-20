@@ -10,6 +10,7 @@
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
 \relative c {
+  \stdClef
   d'8[d,] r d f16[e f g]
   a8[a,] r a cis16[b cis a]
   d8[d,] r d' f16[e d f]

@@ -10,6 +10,7 @@
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
 \relative c {
+  \stdClef
   d4 f g
   a a g
   f f g

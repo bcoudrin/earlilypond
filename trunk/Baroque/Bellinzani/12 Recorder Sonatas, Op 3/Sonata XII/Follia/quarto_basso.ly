@@ -10,14 +10,14 @@
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
 \relative c' {
+  \stdClef
   r8 a8 d8[ a f d]
   r8 e8 a8[ e cis a]
   r8 a'8 d8[ a f d]
   r8 g8 c8[ g e c]
-%  \clef tenor
-  \clef alto
+  \altClef
   r8 c'8 f8[ c a f]
-  \clef bass
+  \stdClef
   r8 g8 c8[ g e cis]
   r8 a'8 d8[ d, bes g]
   r8 e'8 a8[ e cis a]
@@ -25,10 +25,9 @@
   r8 e8 a8[ e cis a]
   r8 a'8 d8[ a f d]
   r8 g8 c8[ g e c]
-%  \clef tenor
-  \clef alto
+  \altClef
   r8 c'8 f8[ c a f]
-  \clef bass
+  \stdClef
   r8 g8 c8[ g e cis]
   r8 d'8 bes8[ g a a,]
   r8 a'8 d8[ a] d,4

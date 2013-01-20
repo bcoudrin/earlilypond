@@ -11,6 +11,7 @@
 
 \time 3/4
 \relative c {
+  \stdClef
   d4 f d
   a' cis, a
   d f d

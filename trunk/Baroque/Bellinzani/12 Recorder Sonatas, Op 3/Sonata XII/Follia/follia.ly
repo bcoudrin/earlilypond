@@ -13,6 +13,7 @@
 
 \paper {
   #(set-paper-size "a4")
+  %%#(set-global-staff-size 17)
   %%between-system-space = 0\cm
   %%between-system-padding = #0
   %%blank-last-page-force = #0
@@ -20,6 +21,7 @@
 
 \layout {
   #(layout-set-staff-size 18)
+  %#(set-global-staff-size 17)
 }
 
 \layout {
@@ -29,7 +31,7 @@
   }
 }
 
-\book {
+%\book {
   \header {
     title = "Follia"
     subtitle = \markup \center-column { "dalla Sonata XII in re minore" \small \italic "per flauto e basso continuo" }
@@ -45,10 +47,11 @@
   
   #(set-global-staff-size 17)
   
-  \score {
-%    altClef = tenor
-%	altClef = alto
+  stdClef = {\clef bass}
+  altClef = {\clef alto}
+  %altClef = {\clef tenor}
   
+  \score {
     \new ChoirStaff {
       <<
         \new Staff {
@@ -98,7 +101,7 @@
           \include "diciassettesimo_continuo.ly"
           \include "diciottesimo_continuo.ly"
         }
-        
+
         \new Staff = bassStaff {
           \set Staff.instrumentName = "Basso"
           \include "primo_basso.ly"
@@ -131,7 +134,7 @@
         \new Staff \with {
           fontSize = #-3
           \override StaffSymbol #'staff-space = #(magstep -3)
-          \override VerticalAxisGroup #'staff-staff-spacing #'basic-distance = #10
+          \override StaffGrouper #'staff-staff-spacing #'basic-distance = #10
         }
         {
           \set Staff.instrumentName = "Flauto"
@@ -142,7 +145,7 @@
           \set figuredBassAlterationDirection = #LEFT
           \set figuredBassPlusDirection = #LEFT
           \override VerticalAxisGroup #'minimum-Y-extent = #'()
-          \override VerticalAxisGroup #'staff-staff-spacing #'basic-distance = #10
+          \override StaffGrouper #'staff-staff-spacing #'basic-distance = #10
           \override BassFigureAlignment #'stacking-dir = #UP
           \override FiguredBass.BassFigure #'font-size = #-6
           \include "primo_continuo.ly"
@@ -159,4 +162,5 @@
       >>
     }
   }
-}
+%}
+

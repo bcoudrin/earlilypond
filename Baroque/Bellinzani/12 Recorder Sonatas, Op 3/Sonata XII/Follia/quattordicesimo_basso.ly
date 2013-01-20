@@ -11,6 +11,7 @@
 
 \time 9/8
 \relative c {
+  \stdClef
   d8[f a] d4. d,8[bes g]
   a8[cis e] a4. a8[e cis]
   d8[f a] d4. d,8[bes g]

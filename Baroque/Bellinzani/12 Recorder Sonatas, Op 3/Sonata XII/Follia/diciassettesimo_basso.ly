@@ -10,7 +10,7 @@
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
 \time 6/8
-\clef bass
+\stdClef
 \key d \minor
 \relative c {
   d8[f a] d[f16 e d e]

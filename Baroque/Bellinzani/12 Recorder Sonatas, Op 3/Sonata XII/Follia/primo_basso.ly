@@ -10,7 +10,7 @@
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
 \time 3/4
-\clef bass
+\stdClef
 \key d \minor
 \relative c {
   d2. a2. d2. c2. f2. c'2 cis,4 d4 bes2 a2.

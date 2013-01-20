@@ -11,6 +11,7 @@
 
 \time 9/8
 \relative c {
+  \stdClef
   d4. f d
   r cis a
   r f' d

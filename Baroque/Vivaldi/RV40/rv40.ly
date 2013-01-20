@@ -25,7 +25,7 @@
   #(define page-breaking ly:page-turn-breaking)
 }
 
-\book {
+%\book {
   \header {
     title = "Sonata a violoncello solo"
     subtitle = \markup \center-column { "Sonata n.5 in mi minore "\small \italic "(RV 40)" }
@@ -34,17 +34,25 @@
     copyright = \markup { "Copyright : " \char ##x00A9 " 2012 Benjamin Coudrin. Copyleft : released under cc-by-3.0 License" }
   }
 
+  stdClef = \clef bass
+  %stdClef = \clef alto
+  altClef = \clef tenor
+  %altClef = \clef alto
+  %altClef = \clef bass
+  %altClef = \clef treble
   
   \score {
     \new StaffGroup <<
       \new Staff <<
         \set Staff.instrumentName = #"Violoncello"
+        %\set Staff.instrumentName = #"Viola"
         \set Staff.shortInstrumentName = #""
         \relative c {
+        %\relative c' {
           \tempo "Largo"
           \key e \minor
           \time 4/4 
-          \clef bass
+          \altClef
           \partial 8
           \repeat volta 2 {
             e8                                 | 
@@ -112,9 +120,10 @@
     \new StaffGroup <<
       \new Staff <<
         \relative c {
+        %\relative c' {
           \tempo "Allegro"
           \key e \minor
-          \clef bass
+          \stdClef
           \partial 8
           \repeat volta 2 {
             b8                                            |
@@ -226,10 +235,11 @@
     \new StaffGroup <<
       \new Staff <<
         \relative c {
+        %\relative c' {
           \tempo "Largo"
           \key e \minor
           \time 12/8 
-          \clef bass
+          \stdClef
           \repeat volta 2 {
             b'8. [d32 (c) b8] b4 b8 e8. [g32 (fis) e8] e4 e8     | % 56
             dis8. [fis32 (e) dis8] dis4 dis8 e8. [d16 c8] b4 a8  | % 57
@@ -277,10 +287,11 @@
     \new StaffGroup <<
       \new Staff <<
         \relative c {
+        %\relative c' {
           \tempo "Allegro"
           \time 3/8 
           \key e \minor
-          \clef bass
+          \altClef
           \repeat volta 2 {
             e'8 b e                | % 66
             c16 (b) a8 c           | % 67
@@ -442,4 +453,4 @@
     %\include "settings.ly"
   }
   
-}
+%}

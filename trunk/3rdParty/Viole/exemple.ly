@@ -16,7 +16,7 @@
 						 <f a>4 }
 				\\ { c4 s | <f, a c>4 } >>
 			c''8( bes) a4 f |
-			\vpmordant c \vsmordant a' \corde #4 g-3 a |
+			\vpmordant c \vsmordant a' \corde #4 g-3 \vplaintevert a |
 			\barre <bes-1 f>4 r \varpeg <bes, d f bes> r
 		}
 	}

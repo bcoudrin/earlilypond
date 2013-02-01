@@ -112,6 +112,44 @@ vmordant =
         		(markup #:musicglyph "scripts.stopped")) 
         $music #}) 
 
+vxmordant =
+	#(define-music-function (parser location music) (ly:music?) 
+     #{ \once \set fingeringOrientations = #'(up) 
+        \once \override Fingering #'padding = #0.2
+        \once \override Fingering #'Y-offset =
+        		#(lambda (grob)
+					   (let 
+						   ((s-pos (ly:grob-staff-position grob)))
+						   (if
+						     (and 
+						       (= (modulo s-pos 2) 0) 
+						       (< s-pos 3) 
+						       (> s-pos -3))
+						     0.5
+						     0)))
+        $(add-vdg-ornament music 45 4 
+        		(markup #:musicglyph "scripts.stopped")) 
+        $music #}) 
+
+vxdmordant =
+	#(define-music-function (parser location music) (ly:music?) 
+     #{ \once \set fingeringOrientations = #'(down) 
+        \once \override Fingering #'padding = #0.2
+        \once \override Fingering #'Y-offset =
+        		#(lambda (grob)
+					   (let 
+						   ((s-pos (ly:grob-staff-position grob)))
+						   (if
+						     (and 
+						       (= (modulo s-pos 2) 0) 
+						       (< s-pos 3) 
+						       (> s-pos -3))
+						     0.5
+						     0)))
+        $(add-vdg-ornament music 45 4 
+        		(markup #:musicglyph "scripts.stopped")) 
+        $music #}) 
+        
 vpmordant =
 	#(define-music-function (parser location music) (ly:music?) 
      #{ \once \set fingeringOrientations = #'(left) 
@@ -190,3 +228,4 @@ vleftfinger =
 	     #{ \once \set fingeringOrientations = #'(left)
                 $music
              #}) 
+      

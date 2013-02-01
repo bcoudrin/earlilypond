@@ -39,6 +39,7 @@
     \context {
       \Voice
       \consists "Horizontal_bracket_engraver"
+      %\consists "Custos_engraver"
       \override HorizontalBracket #'bracket-flare = #'(0.0 . 0.0)
     }
   }
@@ -46,6 +47,8 @@
   \score {
     \new StaffGroup <<
       \new Staff <<
+        \override Staff.Custos #'neutral-position = #4
+        \override Staff.Custos #'style = #'mensural
         #(set-accidental-style 'forget)
         \relative c' {
           \override Fingering #'staff-padding = #'()
@@ -67,7 +70,14 @@
             <<{\corde #2 e'4-1 fis8._1 ([gis32 a]) \vtrembl gis8. ([\once \override NoteColumn #'X-offset = #1 fis32 gis]) \once \override NoteColumn #'X-offset = #1 \vplaintevert a4}\\{e,2 e2}>> | % 10
             <<{\corde #2 e'8-1 e4-1 r8 r8 e4 r8}\\{\slurUp e,8 [\vleftfinger <c'-2> (\vtrembl b) \vleftfinger <a-4>] gis [c (\vtrembl b) \vleftfinger <a-4>]}>> | % 11
             <<{r8 e'4 r8 e4 r8 d8}\\{\slurUp e,8 [c' (\vtrembl b) \vleftfinger <a-4>] gis [\vleftfinger <e-0> (fis-\tweak #'Y-offset #-0.7 -\tweak #'X-offset #0.5 -+) g]}>> | % 12
-            \clef alto
+            \clef alto <<{c [b] \vleftfinger <a-4>4}\\{\vleftfinger <a-4>4. (\vleftfinger <g-2>8)}>> \clef bass <<{a2}\\{\slurUp \vleftfinger <f-1>8 ([e]) \vtrembl d [c]}>> | % 13
+            b8 [<gis' d'>] a, [<a' c>] <d, a' b>4 <<{\slurDown \vtrembl b'8. ([a32 b])}\\{e,4}>> | % 14
+            <<{c'8 [b] \vleftfinger a4 a2}\\{\vleftfinger <a-4>4. (\vleftfinger <g-2>8) \slurUp \vleftfinger <f-1>8 ([e]) \vtrembl d [c]}>> | % 15
+            b8 [<gis' d'>] a, [<a' c>] <d, a' b>4 <<{\slurDown \vtrembl b'8. ([a32 b])}\\{e,4}>> | % 15
+          }
+          \alternative {
+            {a8. cis32-1 ([d e]) a,8.-0 cis,32 ([d e]) <a, cis e a> 4. s16}
+            {a'8 [a,] a,8. [e''16-3] <<{\grace e8 (f4-4-+)}\\{\vleftfinger <a,-1>4}>> \vtrembl f'8.-1 ([d16])}
           }
         }
       >>
@@ -88,11 +98,24 @@
             s4. <6>8 <5 6>8 <5/>8 <_+>4 | % 6
             s4. <6>8 <5 6>8 s4. | % 7
             s4. <7>8 s4. <5+ 7>8 | % 8
-            \bassFigureExtendersOn <_+>2 \bassFigureExtendersOff s2
+            \bassFigureExtendersOn <_+>4  <_+>8 <_+>8 <_+>8 \bassFigureExtendersOff s8 <4 6>4 | % 9
+            <_+>4 <5/>4 <_+>4 <4 6>4 | % 10
+            <_+>4 <5/>4 <_+>4 <5/>4 | % 11
+            <_+>4 <5/>4 <_+>2 | % 12
+            s4 <7>8 <_+>8 s4 <6\\>8 <4 6>8 | % 13
+            <3 4/>8 <5/ 6>8 <6>4 <5 6>4 <4>8 <_+>8 | % 14
+            s4. <_+ 7>8 s4 <6\\>8 <4 6>8 | % 15
+            <3 4/>8 <5/ 6>8 <6>4 <5 6>4 <4>8 <_+>8 | % 16
           } 
+          \alternative {
+            {<_+>4 s2.}
+            {s4 <_+>4 <6>4 s4}
+          }
         }
       
       \new Staff <<
+        \override Staff.Custos #'neutral-position = #4
+        \override Staff.Custos #'style = #'mensural
         #(set-accidental-style 'forget)
         \relative c {
           \clef bass
@@ -116,7 +139,10 @@
             d8 [b] c [a] d [f] e [e'] | % 14
             a,4. a8 d, [e] f [e] | % 15
             d8 [b] c [a] d [f] e [e'] | % 14
-            a,4 (a4 ~ a8 [g \vtrembl f e]) | %15
+          }
+          \alternative {
+            {a,4 (a4 ~ a8 [g \vtrembl f e])}
+            {a4 <a, a'>2 a'4}
           }
         }
       >>

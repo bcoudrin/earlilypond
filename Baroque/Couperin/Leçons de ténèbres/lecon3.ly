@@ -35,10 +35,12 @@
 
 \include "../../../3rdParty/Viole/ornements-viole.ly"
 \include "jod.ly"
+\include "recitatif1.ly"
 
 \score {
   \new StaffGroup <<
     \new Voice = "sopun" <<
+      #(set-accidental-style 'forget)
       \set Staff.instrumentName = #""
       \set Staff.shortInstrumentName = #""
       \relative c'' {
@@ -46,16 +48,23 @@
         \time 2/2
         \clef treble
         \jodsopun
-        \bar "||" s1_\markup{\italic{\column{Petitte pause}}} \bar "||"
+        \textLengthOn
+        \bar "||"
+        s1_\markup{\italic{\center-column{Petitte pause}}}
+        \bar "||"
+        \textLengthOff
+        \recunsopun
       }
     >>
     
     \new Lyrics \lyricsto sopun {
         \jodlyrun
-        \bar "||" _1 "||"
+        %\bar "||" \bar "||"
+        \recunlyrun
     }
     
     \new Voice = "sopdeux" <<
+      #(set-accidental-style 'forget)
       \set Staff.instrumentName = #""
       \set Staff.shortInstrumentName = #""
       \relative c'' {
@@ -63,29 +72,41 @@
         \time 2/2
         \clef treble
         \jodsopdeux
-        \bar "||" s1 \bar "||"
+        s1
+        \recunsopdeux
       }
     >>
     
     \new Lyrics \lyricsto sopdeux {
         \jodlyrdeux
-        \bar "||" _1 \bar "||"
+        %\bar "||"  \bar "||"
+        \recunlyrdeux
     }
     
-    \new FiguredBass {
-      \jodfig
-      \bar "||" s1 \bar "||"
-    }
+    %\new FiguredBass {
+    %  \jodfig
+    %  s1
+    %  \recunfig
+    %}
      
     \new Staff <<
+      #(set-accidental-style 'forget)
       \set Staff.instrumentName = #""
       \set Staff.shortInstrumentName = #""
+      
+      \figuremode {
+        \jodfig
+        s1
+        \recunfig
+      }
+      
       \relative c' {
         \clef bass
         \key d \major 
         \time 2/2
         \jodbass
-        \bar "||" s1 \bar "||"
+        s1
+        \recunbass
       }
     >>
  >>

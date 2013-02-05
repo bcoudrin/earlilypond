@@ -22,8 +22,8 @@ jodsopun = {
 }
 
 jodlyrun = \lyricmode {
-  Jod __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
+  \markup\bold Jod __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  _ _ _ _ _ _ _
 }
 
 jodsopdeux = {
@@ -36,10 +36,11 @@ jodsopdeux = {
   e, [fis e fis] e2 ~ 				| % 7
   e4. fis16 [e ~] \vxmordant e4. d16 [e]	| % 8
   d1						| % 9
+  \stemNeutral
 }
 
 jodlyrdeux = \lyricmode {
-  Jod __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \markup\bold Jod __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 }
 
 jodfig = \figuremode {

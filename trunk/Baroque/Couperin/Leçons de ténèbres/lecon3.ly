@@ -37,6 +37,14 @@
 \include "jod.ly"
 \include "recitatif1.ly"
 
+petittePause = {
+  \textLengthOn
+  \bar "||"
+  s1_\markup{\italic{\center-column{Petitte pause}}}
+  \bar "||"
+  \textLengthOff
+}
+
 \score {
   \new StaffGroup <<
     \new Voice = "sopun" <<
@@ -48,18 +56,14 @@
         \time 2/2
         \clef treble
         \jodsopun
-        \textLengthOn
-        \bar "||"
-        s1_\markup{\italic{\center-column{Petitte pause}}}
-        \bar "||"
-        \textLengthOff
+        \petittePause
         \recunsopun
+        \petittePause
       }
     >>
     
     \new Lyrics \lyricsto sopun {
         \jodlyrun
-        %\bar "||" \bar "||"
         \recunlyrun
     }
     
@@ -74,21 +78,15 @@
         \jodsopdeux
         s1
         \recunsopdeux
+        s1
       }
     >>
     
     \new Lyrics \lyricsto sopdeux {
         \jodlyrdeux
-        %\bar "||"  \bar "||"
         \recunlyrdeux
     }
-    
-    %\new FiguredBass {
-    %  \jodfig
-    %  s1
-    %  \recunfig
-    %}
-     
+
     \new Staff <<
       #(set-accidental-style 'forget)
       \set Staff.instrumentName = #""
@@ -98,6 +96,7 @@
         \jodfig
         s1
         \recunfig
+        s1
       }
       
       \relative c' {
@@ -107,6 +106,7 @@
         \jodbass
         s1
         \recunbass
+        s1
       }
     >>
  >>

@@ -35,6 +35,12 @@ recunsopun = {
   fis4 \vxmordant e8 [d] e4 fis8 [g]  		| % 28
   a2. \vxmordant g8 [fis]   			| % 29
   g2. \vxmordant fis8 [e]  			| % 30
+  fis2. \vxmordant e8 [d]			| % 31
+  e2 ~ e4. fis8					| % 32
+  e2. fis8 [e]					| % 33
+  fis2 (\vxmordant e4. d16 [e])		| % 34
+  d1  						| % 35
+  
 }
 
 recunlyrun = \lyricmode {
@@ -45,7 +51,7 @@ recunlyrun = \lyricmode {
   de qui- bus
   \markup{\concat{pr \char ##x0153 -}} ce- pe- ras
   ne in- tra- rent in Ec- cle- si- am tu- __ am
-  Caph __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  Caph __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 }
 
 recunsopdeux = {
@@ -63,7 +69,7 @@ recunsopdeux = {
   a2 cis  						| % 14
   cis4 a8 a g4 g8. a16  				| % 15
   \vxmordant fis4 fis d'4. d8  			| % 16
-  \vxmordant cis4 cis8 d \grace cis8 (b2)  			| % 17
+  \vxmordant cis4 cis8 d \grace cis8 (b2)  		| % 17
   \vxmordant ais2 r4 a4  				| % 18
   b4 b8. b16 cis4. dis8  				| % 19
   \grace d8 (e2) e4 d  					| % 20
@@ -77,6 +83,11 @@ recunsopdeux = {
   g1 ~   						| % 28
   g4 \vxmordant fis8 [e] fis2 ~  			| % 29
   fis4 \vxmordant e8 [d] e2 ~  			| % 30
+  e4 \vxmordant d8 [cis] d2 ~				| % 31
+  d4. e8 d2 ~   					| % 32
+  d4. e8 d2 ~  						| % 33
+  d4. (e16 [d] \vxmordant cis4. b16 [cis])  		| % 34
+  d1  							| % 35
 }
 
 recunlyrdeux = \lyricmode {
@@ -88,7 +99,7 @@ recunlyrdeux = \lyricmode {
   de qui- bus
   \markup{\concat{pr \char ##x0153 -}} ce- pe- ras
   ne in- tra- rent in Ec- cle- si- am tu- am
-  Caph __ _ _ _ _ _ _ _ _ _ _ _
+  Caph __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 }
 
 recunfig = \figuremode {
@@ -123,6 +134,13 @@ recunfig = \figuremode {
   <8 7>2 <5/ 8>2  		| % 28
   <8 7>1   			| % 29
   <6 5>2 <5/ 8>2  		| % 30
+  <6 5>1  			| % 31
+  <6 5>2 <5/>2  		| % 32
+  <5 4>2 <6 4 3>4 <6 5>4  	| % 33
+  <6 4>2 \bassFigureExtendersOn
+  <_ 3>4 <7 3>4  		| % 34
+  \bassFigureExtendersOff
+  s1   				| % 35
 }
 
 recunbass = {
@@ -156,4 +174,9 @@ recunbass = {
   g (a8 [b]) cis4 (b)	| % 28
   a (b8 [cis]) d4 (fis)	| % 29
   b, (d) cis (e)	| % 30
+  a, (cis) b (d)  	| % 31
+  g,2 gis  		| % 32
+  a b4 g  		| % 33
+  a2 a,  		| % 34
+  d,1  			| % 35
 }

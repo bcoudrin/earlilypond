@@ -10,7 +10,8 @@
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
 recunsopun = {
-  \mark \markup{\italic{Récitatif}}
+  %\mark \markup{\italic{Récitatif}}
+  \tempo "Récitatif"
   \autoBeamOff
   r4 fis,8 g a a b cis				| % 1
   d2 d4. d8					| % 2

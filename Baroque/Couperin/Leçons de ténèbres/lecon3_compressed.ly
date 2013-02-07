@@ -1,4 +1,4 @@
-%%  lecon3.ly
+%%  lecon3_compressed.ly
 %%  Copyright (c) 2013 Benjamin Coudrin <benjamin.coudrin@gmail.com>
 %%                All Rights Reserved
 %%
@@ -12,7 +12,7 @@
 \version "2.14.2"
 
 #(set-default-paper-size "a4")
-#(set-global-staff-size 18)
+#(set-global-staff-size 17)
 
 \paper {
   line-width    = 190\mm
@@ -22,14 +22,7 @@
   ragged-last-bottom = ##t 
   ragged-bottom = ##f
   annotate-spacing = ##f
-  page-breaking = #ly:page-turn-breaking
   #(define page-breaking ly:page-turn-breaking)
-}
-
-\layout {
-  \context {
-    \RemoveEmptyStaffContext
-  }
 }
 
 \header {
@@ -58,25 +51,24 @@ petittePause = {
 }
 
 \score {
-  \new StaffGroup  <<
-    \new Voice = "sopun" <<
+  \new StaffGroup <<
+    \new Staff <<
       #(set-accidental-style 'forget)
-      \set Staff.instrumentName = #""
-      \set Staff.shortInstrumentName = #""
+      \key d \major
+      \override Staff.TimeSignature #'style = #'single-digit
+      \time 2/2
+      \clef treble
+    \new Voice = "sopun" {
+      \voiceOne
       \relative c'' {
-        \key d \major
-        \override Staff.TimeSignature #'style = #'single-digit
-        \time 2/2
-        \clef treble
         \jodsopun
         \petittePause
         \override Staff.TimeSignature #'style = #'default
         \time 2/2
         \recunsopun
-        s1
+        \petittePause
         \recdeuxsopun
         \petittePause
-        \allowPageTurn
         \ovossopun
         \petittePause
         \memsopun
@@ -86,7 +78,7 @@ petittePause = {
         \jerusopun
         \bar "||"
       }
-    >>
+    }
     
     \new Lyrics \lyricsto sopun {
         \jodlyrun
@@ -98,7 +90,8 @@ petittePause = {
         \jerulyrun
     }
     
-    \new Voice = "sopdeux" <<
+    \new Voice = "sopdeux" {
+      \voiceTwo
       #(set-accidental-style 'forget)
       \set Staff.instrumentName = #""
       \set Staff.shortInstrumentName = #""
@@ -111,7 +104,7 @@ petittePause = {
         s1
         \override Staff.TimeSignature #'style = #'default
         \recunsopdeux
-        \petittePause
+        s1
         \recdeuxsopdeux
         s1
         \ovossopdeux
@@ -121,7 +114,7 @@ petittePause = {
         s1
         \jerusopdeux
       }
-    >>
+    }
     
     \new Lyrics \lyricsto sopdeux {
         \jodlyrdeux
@@ -132,7 +125,8 @@ petittePause = {
         \rectroislyrdeux
         \jerulyrdeux
     }
-
+    >>
+    
     \new Staff <<
       #(set-accidental-style 'forget)
       \set Staff.instrumentName = #""

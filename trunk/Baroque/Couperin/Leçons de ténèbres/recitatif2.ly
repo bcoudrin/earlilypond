@@ -10,7 +10,8 @@
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
 recdeuxsopun = {
-  \mark \markup{\italic{Récitatif}}
+  %\mark \markup{\italic{Récitatif}}
+  %\tempo "Récitatif"
   \autoBeamOff
   r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1		| % 1-10
   r4 gis,2 g4  							| % 11
@@ -47,6 +48,7 @@ recdeuxlyrun = \lyricmode {
 
 recdeuxsopdeux = {
   \autoBeamOff
+  \tempo "Récitatif"
   r2 fis,4 fis 					| % 1
   fis4. fis16 b \vxmordant ais4 ais  		| % 2
   aes4. (gis8) \vxmordant g2  			| % 3

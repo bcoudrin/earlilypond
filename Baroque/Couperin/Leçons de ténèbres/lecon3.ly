@@ -36,6 +36,10 @@
 \include "../../../3rdParty/Viole/ornements-viole.ly"
 \include "jod.ly"
 \include "recitatif1.ly"
+\include "recitatif2.ly"
+\include "ovos.ly"
+\include "mem.ly"
+\include "recitatif3.ly"
 
 petittePause = {
   \textLengthOn
@@ -59,12 +63,23 @@ petittePause = {
         \petittePause
         \recunsopun
         \petittePause
+        \recdeuxsopun
+        \petittePause
+        \ovossopun
+        \petittePause
+        \memsopun
+        \bar "||"
+        \rectroissopun
       }
     >>
     
     \new Lyrics \lyricsto sopun {
         \jodlyrun
         \recunlyrun
+        \recdeuxlyrun
+        \ovoslyrun
+        \memlyrun
+        \rectroislyrun
     }
     
     \new Voice = "sopdeux" <<
@@ -79,12 +94,22 @@ petittePause = {
         s1
         \recunsopdeux
         s1
+        \recdeuxsopdeux
+        s1
+        \ovossopdeux
+        s1
+        \memsopdeux
+        \rectroissopdeux
       }
     >>
     
     \new Lyrics \lyricsto sopdeux {
         \jodlyrdeux
         \recunlyrdeux
+        \recdeuxlyrdeux
+        \ovoslyrdeux
+        \memlyrdeux
+        \rectroislyrdeux
     }
 
     \new Staff <<
@@ -97,6 +122,12 @@ petittePause = {
         s1
         \recunfig
         s1
+        \recdeuxfig
+        s1
+        \ovosfig
+        s1
+        \memfig
+        \rectroisfig
       }
       
       \relative c' {
@@ -107,6 +138,12 @@ petittePause = {
         s1
         \recunbass
         s1
+        \recdeuxbass
+        s1
+        \ovosbass
+        s1
+        \membass
+        \rectroisbass
       }
     >>
  >>

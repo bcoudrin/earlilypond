@@ -51,7 +51,7 @@ recunlyrun = \lyricmode {
   de qui- bus
   \markup{\concat{pr \char ##x0153 -}} ce- pe- ras
   ne in- tra- rent in Ec- cle- si- am tu- __ am
-  Caph __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \markup\bold Caph __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 }
 
 recunsopdeux = {
@@ -99,7 +99,7 @@ recunlyrdeux = \lyricmode {
   de qui- bus
   \markup{\concat{pr \char ##x0153 -}} ce- pe- ras
   ne in- tra- rent in Ec- cle- si- am tu- am
-  Caph __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \markup\bold Caph __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 }
 
 recunfig = \figuremode {

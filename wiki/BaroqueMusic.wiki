@@ -11,3 +11,7 @@ Antonio Vivaldi, Sonata n°5 a violoncello solo in mi minore (RV40)
  * [http://code.google.com/p/earlilypond/downloads/detail?name=rv40-ut3.pdf Bass Viol version]
  * [http://code.google.com/p/earlilypond/downloads/detail?name=rv40-fa4.pdf F4 Clef only version]
  * [http://code.google.com/p/earlilypond/downloads/detail?name=rv40-viola.pdf Viola version]
+
+=== Couperin, Leçons de Ténèbres ===
+Leçons de Ténèbres pour le Mercredy Saint
+ * [http://code.google.com/p/earlilypond/downloads/detail?name=lecon3.pdf&can=2&q=#makechanges 3e leçon]

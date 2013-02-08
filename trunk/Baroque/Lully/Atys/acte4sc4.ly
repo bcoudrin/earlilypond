@@ -12,7 +12,7 @@
 \version "2.14.2"
 
 #(set-default-paper-size "a4")
-#(set-global-staff-size 16)
+#(set-global-staff-size 15)
 
 \paper {
   line-width    = 188\mm
@@ -281,7 +281,7 @@ secdessus = {
     ees4 ees8. ees16 \vxmordant c4 d8 f
     bes,4 bes8 ees \vxmordant c c16 d ees8 [d16] ees
     \vxmordant d4 r8 ees c4 f8. f16
-    \vxmordant d4 ees8. g16 d4 e8 [d16] ees
+    \vxmordant d4 ees8. g16 d4 ees8 [d16] ees
     \bla e2 (\vxmordant d4.) c8
     \ter c4 r r
     \bla r1
@@ -438,7 +438,7 @@ lyrdeux = \lyricmode {
   he bien il ne faut plus rien tai- re,
   Je vais de la Dé- esse at- ti- rer
   la col- lè- re, m'of- frir à sa
-  fu- reur puis- que vus m'y for- cez
+  fu- reur puis- que vous m'y for- cez
   
   % Sangaride
   Ah! de- meu- rez, A- tys, mes soup- çons
@@ -594,8 +594,8 @@ basse = {
     bis,2 c		| % 15
     g g'		| % 16
     \ter eis4 ~ eis2	| % 17
-    f2 ~ f8. [e16]
-    d4. e8 f [f,]
+    f2 ~ f8. [ees16]
+    d4. ees8 f [f,]
     \bin bes1
     ees
     aes2 ~ aes
@@ -631,7 +631,7 @@ basse = {
     \ter f4 fis2
     g2.
     c,2 f4
-    d4. e8 f [f,]
+    d4. ees8 f [f,]
     \bin bes2 bes'
     g f
     ees d4. c8

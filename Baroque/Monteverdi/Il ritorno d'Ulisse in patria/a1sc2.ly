@@ -314,6 +314,105 @@ voixun = {
     f4^\markup{EURIMACO} e d c bes a
     a2 gis4 a a r
     \break
+    
+    \clef treble
+    f'4 g4. g8 a4. a8 g8. f16
+    g4 r r r2.
+    d'4 g,4. f8 a2.
+    d,4 d d d2 d4
+    r1.
+    d4 d d d2. ~
+    d1. ~
+    d1.
+    \once \override Staff.TimeSignature #'stencil = ##f
+    \time 3/4
+    e4 e2
+    \time 4/4
+    d4 d8. d16 a'2
+    \break
+    \once \override Staff.TimeSignature #'stencil = ##f
+    \time 4/1
+    \tempo Presto
+    a\longa^\markup{MELANTO}
+    bes
+    \once \override Staff.TimeSignature #'stencil = ##f
+    \time 4/4
+    a1
+    \tempo Tardo
+    a2 r4 g8 g
+    g2 r4 f8 f
+    f4 (e4.) d8 d d
+    d4 c b b
+    
+    \clef "G_8"
+    r4^\markup{EURIMACO} a8. a16 e'2
+    \once \override Staff.TimeSignature #'stencil = ##f
+    \time 4/1
+    \tempo "[Presto]"
+    e\longa
+    d
+    \once \override Staff.TimeSignature #'stencil = ##f
+    \time 4/4
+    c8 c bes bes bes4 r
+    r a8 a a4 r
+    r g8 g g4 f8 f
+    f4 f8 f f4. e8
+    e1
+    d4. d'8 d8. d16 c8. c16
+    \break
+    
+    % Melanto
+    \clef "treble"
+    r4^\markup{MELANTO} r8 a' a8. a16 g8. g16
+    e8 e e e g4 a8 a
+    b b r g b8. b16 a8. a16
+    fis8 fis fis fis a4 b8 b
+    c c r a c8. c16 b8. b16
+    g8 g a a a2
+    g4 f e2
+    d1\fermata
+    \break
+    \time 6/4 r4 f d e f r
+    g4. g8 d4 e e r
+    
+    % Eurimaco
+    \clef "G_8"
+    r4 d b c c r
+    d4.^\markup{EURIMACO} d8 gis,4 a2.
+    
+    % Melanto
+    \clef treble
+    a'4.^\markup{MELANTO} bes8 f4 g a r
+    
+    % Eurimaco
+    \clef "G_8"
+    d,4.^\markup{EURIMACO} e8 b4 cis a r
+    
+    % Melanto
+    \clef "treble"
+    d4^\markup{MELANTO} e f g a a
+    a2 gis4 a a r
+    
+    % Eurimaco
+    \clef "G_8"
+    f4^\markup{EURIMACO} e d c bes a
+    a2 gis4 a a r
+    
+    % Duo
+    \clef treble
+    <<{f'4^\markup{MELANTO} g4. g8 a4 }\\{d,_\markup{EURIMACO} e4. e8 f4}>>
+    r8 a g8. f16
+    g4 r8
+    \clef "G_8"
+    e8^\markup{EURIMACO} d8. c16 d4 r r
+    \clef treble
+    <<{d'4^\markup{MELANTO} g,4. g8 a2.}\\{g4_\markup{EURIMACO} d4. d8 e2.}>>
+    d4 d d d2 d4
+    \clef "G_8"
+    d4^\markup{EURIMACO} d d d2 d4
+    \clef treble
+    <<{d4^\markup{MELANTO} d4 d4 d2.~d1.~d e4 e2 d2.\fermata}\\{d4_\markup{EURIMACO} d4 d4 d2.~d1.~d d4 d4. cis8 (d2.)}>>
+    \bar "|."
   }
 }
 
@@ -398,6 +497,78 @@ lyrun = \lyricmode {
   
   % Eurimaco
   lie- to mio be- ne, mio ben sa- ra- i;
+  
+  % Melanto
+  no- do si bel, si bel, si bel,
+  no- do si bel non si di- sciol- ga,
+  no si di- sciol- __ ga ma- i
+  Co- me, oh,
+  \override LyricText #'self-alignment-X = #LEFT
+  come~il~desio~m'invoglia,Eu-
+  rimaco,mia~vita,senza~fren,senza
+  morso,dar~nei~tuo
+  \override LyricText #'self-alignment-X = #CENTER
+  sen, nel tuo sen,
+  nel tuo sen __
+  al- le mie gio- ie~il cor- so!
+  
+  % Eurimaco
+  Co- me, oh,
+  \override LyricText #'self-alignment-X = #LEFT
+  come~colentieri~cangerei~questa~reggia~in~un~de-
+  serto,dove~occhio~curi-
+  \override LyricText #'self-alignment-X = #CENTER
+  o- so a ve- der,
+  a ve- der,
+  a ve- der non giun- ges- se
+  i no- stri~er- ro- ri;
+  ché~ad un fo- co- so
+  
+  % Melanto
+  Ché~ad un fo- co- so pet- to
+  il ri- spet- to~è di- spet- to,
+  ché~ad un fo- co- so pet- to
+  il ri- spet- to~è di- spet- to,
+  ché~ad un fo- co- so pet- to il ri- spet- to~è
+  di- spet- to.
+  Dol- ce, dol- ce, dol- ce mia vi- ta,
+  
+  %Eurimaco
+  Lie- to, lie- to,
+  lie- to mio ben,
+  
+  % Melanto
+  lie- to mio be- ne
+  
+  %Eurimaco
+  dol- ce mia vi- ta
+  
+  % Melanto
+  dol- ce mia vi- tan mia vi- ta se- i;
+  
+  % Eurimaco
+  lie- to mio be- ne, mio ben sa- ra- i;
+  
+  % Duo
+  % no- do si bel
+  
+  % Melanto
+  si bel, si bel,
+  
+  % Eurimaco
+  no- do si bel
+  
+  % Duo
+  % no- do si bel
+  
+  % Melanto
+  non si di- sciol- ga
+  
+  % Eurimaco
+  non si di- sciol- ga,
+  
+  % Duo
+  % non si- di- sciol- __ ga ma- i __
 }
 
 %% Ligne secondaire  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -493,6 +664,51 @@ voixdeux = {
     r
     r
     r
+    
+    d4 e4. e8 f4 r r
+    r r8 e d8. c16 d4 r r
+    g d4. d8 e2.
+    r1.
+    d4 d d d2 d4
+    d d d d2. ~
+    d1.~
+    d1.
+    
+    \once \override Staff.TimeSignature #'stencil = ##f
+    \time 3/4
+    d4 d4. cis8
+    (\time 4/4
+    d2) r
+    r\longa
+    r
+    r1
+    r
+    r
+    r
+    r
+    r
+    r\longa
+    r
+    r1
+    r
+    r
+    r
+    r
+    r
+    
+    f,8^\markup{EURIMACO} f f f f4 g8 g
+    c c r c e8. e16 d8. d16
+    g,8 g g g g4 a8 a
+    d d r d f8. f16 e8. e16
+    a,8 a r f a8. a16 g8. g16
+    c8 c f, f f2
+    g4 g a2
+    d,1\fermata
+    
+    r1. r1.
+    r1.
+    
+    r1. r r r r r r r r
   }
 }
 
@@ -510,6 +726,15 @@ lyrdeux = \lyricmode {
   ar- re- ca~of- fe- sa
   Né con ra- gion s'of- fen- de co- lui
   che per of- fe- se a- mor ti ren- de.
+  
+  no- do si bel, no- do si bel, no- do si bel
+  non si di- sciol- ga, non si di- sciol- __ ga ma- i __
+  
+  pet- to il ri- spet- to~è di- spet- to,
+  ché~ad un fo- co- so pet- to il ri- spet- to~è
+  di- spet- to ché~ad un fo- co- so pet- to
+  ché~ad un fo- co- so pet- to il ri- spet- to~è
+  di- spet- to.
 }
 
 %% BASSE CONTINUE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -740,6 +965,61 @@ bassefig = \figuremode {
   <7 5>2 <6+ 5!>4 <_+>4. <3>8 <6>4
   s2. <5>4 <5>2
   <7 5>2 <6+ 5!>4 <_+>2.
+  s1.
+  s2. <5>
+  <6 5> <_+>
+  <6>4 <_-> <3> <6> <6 5 _-> <6- 4>
+  <_+> <3> <6> <_-> <6+> <6>
+  <6> <_-> <6+> <6> <6 5 _-> <6- 4>
+  <_+> <3> <6> <_-> <_+> <3>
+  <6> <_-> <6+> <6> <6>2
+  <_->4 <4> <_+>
+  <_+>1
+  s\longa
+  <_->
+  s1
+  <7>2. <6>4
+  <7>2. <6>4
+  <7 _->4 <6> <7> <6>
+  <_+>4  \bassFigureExtendersOn 
+  <6 4> <5 4> \bassFigureExtendersOff
+  <_+>
+  <_+>1
+  s\longa
+  s
+  s1
+  <_->
+  s2 <6>
+  <5> <6>
+  <7+ 4 2>1
+  s
+  s
+  s2. <_+>4
+  s2. <_+>4
+  <_+>2. <_+>4
+  s1
+  s1
+  s2 <4>4 <_+>
+  <_+>1
+  s2. <5>4 <6>2
+  <6>2 <6+>4 <_+>4. <3>8 <6>4
+  s2. <5>4 <5>2
+  <7>2 <6+>4 <_+>4. <3>8 <6>4
+  s1 <5>2
+  <7> <6+>4 <_+>4. <3>8 <6>4
+  s1 <5>4 <5>
+  <7 5>2 <6+ 5!>4 <_+>4. <3>8 <6>4
+  s1 <5>4 <5>
+  <7 5>2 <6+ 5!>4 <_+>2.
+  s1.
+  s2. <5>
+  <6 5> <_+>
+  <6>4 <_-> <3> <6> <6 5 _-> <6- 4>
+  <_+> <3> <6> <_-> <6+> <6>
+  <6> <_-> <6+> <6> <6 5> <6- 4>
+  <_+> <3> <6> <_-> <_+> <3>
+  <6> <_-> <6+> <6> <6>2
+  <_->4 <4> <_+> <_+>
 }
 
 basse = {
@@ -842,7 +1122,6 @@ basse = {
     c d2
     e2. ~
     e4 a a
-    \bar "|."
     g e2
     f4 d2
     e4 c2
@@ -858,9 +1137,9 @@ basse = {
     a2 gis4
     a4. g8 f4 e
     d1
-    c8 [c' b] a [g8. f16]
-    g8 [f e] f [e8. d16]
-    e8 [e d] e [d8. c16]
+    c8 [c' b] c [b8. a16]
+    b8 [a g] a [g8. f16]
+    g8 [g f] g [f8. e16]
     f8 [e d] e [d8. c16]
     d8 [d c] d [c8. b16]
     c2. c4
@@ -960,6 +1239,60 @@ basse = {
     bes b4 a4. b8 cis4
     d2 d4 c a2
     bes b4 a2.
+    d4 c4. c8 f,2.
+    c' bes
+    bes4 bes4. bes8 a2.
+    fis4 g a bes c d
+    d, e fis g a bes
+    fis g a bes c d
+    d, e fis g d e
+    fis g a bes fis!2
+    g4 a2
+    d,1
+    f'\longa
+    g,
+    f1
+    bes,
+    a
+    g2 f
+    e1
+    a
+    c'\longa
+    bes
+    a1
+    g
+    f2 e
+    d1
+    d
+    d2 d'4 c
+    f, f2 g4
+    c2 e4 d
+    g,4 g2 a4
+    d2 f!4 e
+    a,4 r8 f a4 g
+    c f, f2
+    g a
+    d,1\fermata
+    
+    d'2. c4 a2
+    bes b4 a4. b8 cis4
+    d2. c4 a2
+    bes2 b4 a4. b8 cis4
+    d2. c4 a2
+    bes b4 a4. b8 cis4
+    d2 d4 c a2
+    bes2 b4 a4. b8 cis4
+    d2 d4 c a2
+    bes2 b4 a2.
+    d4 c4. c8 f,2.
+    c' bes
+    bes4 bes4. bes8 a2.
+    fis4 g a bes c d
+    d, e fis g a bes
+    fis g a bes c d
+    d, e fis g d e
+    fis g a bes fis!2
+    g4 a2 d,2.\fermata
   }
 }
 

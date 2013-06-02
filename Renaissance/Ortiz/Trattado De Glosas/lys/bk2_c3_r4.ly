@@ -67,8 +67,13 @@
 \relative c {
 	\time 9/2
 	\key f \major
-	\clef tenor
-	f,\breve\fermata
+	\clef varbaritone
+	d2 a'2. g4 fis e f4. g8 a4 a d4. c8 bes a bes4. c8 d2 a4 c4. bes8 a g a4. g8 f4 e d c bes a8 g f4 c''4. bes8 a g
+	\clef alto
+	a8 bes c a bes4 g4. a8 bes c d4 e fis2 r4 a,4. g8 fis e f g a f g a bes g a bes c a bes4 c d e f g a bes a,
+	bes2. c4 d e fis2. g4 a f g g, a8 bes c a bes a f g a bes c a bes4 d e8 f g e f4 d2 a4 bis c d bes d2. c8 bes
+	a4 g fis e d8 e fis g \clef varbaritone a g fis e d c bes a g4 d''2 bes g4 a f4. g8 a bes c4 a \clef alto bes f'2 d bes4
+	
 	\bar"||"
 }
 >>

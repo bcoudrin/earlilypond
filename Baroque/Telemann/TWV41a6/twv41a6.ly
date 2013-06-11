@@ -27,7 +27,7 @@
 
 \header {
   title = "Sonata A-Moll"
-  subtitle = \markup \center-column { "für Viola di gamba une Continuo"\small \italic "(TWV 41:a6)" }
+  subtitle = \markup \center-column { "für Viola di gamba und Continuo"\small \italic "(TWV 41:a6)" }
   composer =  \markup \right-column { "Georg Philipp Telemann" \small "(1681-1767)" }
   tagline = ""
   copyright = \markup { "Copyright : " \char ##x00A9 " 2013 Benjamin Coudrin. Copyleft : released under cc-by-3.0 License" }
@@ -52,12 +52,24 @@
           c b a r c d
           e d c d g f
           e d c r b2 ~
-          b4 c b ~ b d8 [(c)] b4 ~
+          b4 c b (b) d8 [(c)] b4 ~
           b c b ~ b f' e
           d c8 [(b)] c4 b a8 [(gis)] a4
           gis1.
         }
         \repeat volta 2 {
+          e'2. g
+          cis, r4 d f
+          e d e a, e' g
+          f e f r a, b
+          c d e d c8 [(b)] c4
+          b a g r d'2 ~
+          d4 cis d ~ d f8 [(e)] d4 ~
+          d b c (c) e8 [(d)] c4 
+          (c) a bes ~ bes d bes
+          gis b d f e gis
+          a a, d c8 [b] b4. a8
+          a1.
         }
       }
     >>
@@ -78,6 +90,18 @@
         <3 4 6>2. <5 6>2 <6>4
         <6\\>2. <6>4 <_+> <6>
         <_+>1.
+        <5>2. <6>
+        <_+> <6>
+        <_- 5 6> <_+>
+        s <6>2 <2 4>4
+        <6>2. <6>
+        s <6>
+        s <5 6>
+        <4 5>2 <3> <6>
+        <7>2. <6->4 <6> <6->
+        <6\\> <6> <5> <7> <6> <_+>
+        <7>2 <6>4 <7> <_+>2
+        s1.
     }
     
     \new Staff <<
@@ -100,7 +124,18 @@
           e e' (b) e,2 r4
         }
         \repeat volta 2 {
-          
+          c'4 b c bes a bes
+          a a' g f2.
+          g a
+          d, f
+          e fis
+          g fis4 d fis
+          g2 r4 gis4 e gis
+          a2 r4 a, c a
+          d2 r4 d f d
+          b! d b gis2 e4
+          f2 r4 d' e e,
+          a a' (e) e,2 r4
         }
       }
     >>

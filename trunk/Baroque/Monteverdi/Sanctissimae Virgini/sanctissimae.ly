@@ -5,10 +5,18 @@
   composer = "Claudio Monteverdi"
   date = "1567-1643"
   publisher = \markup { "Copyright : " \char ##x00A9 " 2013 Benjamin Coudrin" }
+  tagline = ""
 }
 
 \paper{
-  tocTitleMarkup = "INDEX"
+  tocTitleMarkup = \markup \huge \column {
+    \hspace #2
+    \fill-line { \null "INDEX" \null }
+    \hspace #1
+  }
+  tocItemMarkup = \markup \large \fill-line {
+    \fromproperty #'toc:text \fromproperty #'toc:page
+  }
 }
 \layout{}
 

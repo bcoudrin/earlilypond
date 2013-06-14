@@ -6,59 +6,65 @@
 \include "Missa/missa_sextus.ly"
 \include "Missa/missa_continuo.ly"
 
+
+fughe = \markup {
+  \score {
+    \new Staff = "missa_continuo" {
+        \override Staff.TimeSignature #'style = #'mensural
+        \set Staff.instrumentName = \markup{ \center-column { "Bassus" \line { "Generalis" } } }
+        \fughecontinuo
+      }
+      \layout {}
+  }
+}
+
 missa = \markup {
   \score {
     <<
       \new StaffGroup = "missa_choral" <<
-        \new Staff = "missa_cantus" {
+        \new Voice = "missacantus" {
           \override Staff.TimeSignature #'style = #'mensural
-          \set Staff.InstrumentName = #"Cantus"
-          \fughecantus
+          \set Staff.instrumentName = #"Cantus"
           \missacantus
         }
+        \new Lyrics \lyricsto missacantus { \lyrmissacantus }
         \new Staff = "missa_altus" {
           \override Staff.TimeSignature #'style = #'mensural
-          \set Staff.InstrumentName = #"Altus"
-          \fughealtus
+          \set Staff.instrumentName = #"Altus"
           \missaaltus
         }
         \new Staff = "missa_tenor" {
           \override Staff.TimeSignature #'style = #'mensural
-          \set Staff.InstrumentName = #"Tenor"
-          \fughetenor
+          \set Staff.instrumentName = #"Tenor"
           \missatenor
         }
         \new Staff = "missa_bassus" {
           \override Staff.TimeSignature #'style = #'mensural
-          \set Staff.InstrumentName = #"Bassus"
-          \fughebassus
+          \set Staff.instrumentName = #"Bassus"
           \missabassus
         }
         \new Staff = "missa_quintus" {
           \override Staff.TimeSignature #'style = #'mensural
-          \set Staff.InstrumentName = #"Quintus"
-          \fughequintus
+          \set Staff.instrumentName = #"Quintus"
           \missaquintus
         }
         \new Staff = "missa_sextus" {
           \override Staff.TimeSignature #'style = #'mensural
-          \set Staff.InstrumentName = #"Sextus"
-          \fughesextus
+          \set Staff.instrumentName = #"Sextus"
           \missasextus
         }
       >>
       \new Staff = "missa_continuo" {
         \override Staff.TimeSignature #'style = #'mensural
-        \set Staff.InstrumentName = #"Bassus Generalis"
-        \fughecontinuo
+        \set Staff.instrumentName = \markup{ \center-column { "Bassus" \line { "Generalis" } } }
         \missacontinuo
       }
     >>
     \layout{
       \context {
         \Staff
-        %\RemoveEmptyStaves
-        %\override VerticalAxisGroup #'remove-first = ##t
+        \RemoveEmptyStaves
+        \override VerticalAxisGroup #'remove-first = ##t
       }
     }
   }

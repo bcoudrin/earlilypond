@@ -64,8 +64,8 @@
 	\time 6/2
 	\clef varbaritone
 	\key f \major
-	g1 bes2. c4 d2 g, a f a2. bes4 c2 a bes g bes2. c4 d2 g, a d, fis2. g4 a2 f g d'2. c8 bes a2 c a f
-	c'2. bes8 a g2 d' bes g bes2. a8 g fis2 a fis2. g4 a2 fis g d'2. c8 bes a g2 bes a c2. bes4 a g f2 a g d'2. c4 bes a
+	g1 bes2. c4 d2 g, a f a2. bes4 c2 a bes g bes2. c4 d2 g, a d, fis2. g4 a2 f g d' bes g d'2. c8 bes a2 c a f
+	c'2. bes8 a g2 d' bes g bes2. a8 g fis2 a fis2. g4 a2 fis g d'2. c4 bes a g2 bes a c2. bes4 a g f2 a g d'2. c4 bes a
 	g2 bes a4 g fis e d e fis e d c d8 c bes a g4 d'' bes d4. c8 bes a g a bes c \clef alto d c bes a bes c d e
 	f4 c a c4. bes8 a g f e f g a bes c d c4 a bes2 d1 bes g2 r a1 fis d2 r d'1 bes g2 r c1 a f2 r4 d'2 bes4. a8 bes c d4 bes2
 	g4. a8 bes g a4 a2 fis4. e8 f g a4 fis4. e8 f g a4 fis g g2 a4 bes c d bes2 c4 d e f f,2 g4 a bes c a4. g8 a bes

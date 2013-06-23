@@ -56,6 +56,7 @@
 	c4 ees4. d8 e f \bar "|"
 	g4 c,4. bis8 bes4 \bar "|"
 	c4 g'4. f8 fis4 \bar "|"
-	g4 f8 e d c bes a g\breve\fermata \bar"||"
+	g4 f8 e d c bes a g\breve\fermata \bar"|."
+        \cadenzaOff
 }
 >>

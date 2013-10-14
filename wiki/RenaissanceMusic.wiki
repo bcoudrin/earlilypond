@@ -1,4 +1,0 @@
-#summary Renaissance Scores
-
-=== Ortiz, O Felici Occhi Miei ===
- * [http://code.google.com/p/earlilypond/downloads/detail?name=ofelici_recercada.pdf 4 parts with variation on soprano part]

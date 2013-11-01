@@ -18,7 +18,7 @@ From the catalogue of Lionel Sawkins
   * S.5 : Beati quorum (1683) [http://fr.wikipedia.org/wiki/Psaume_32_(31) Psalm 32(21)] [http://imslp.org/wiki/Beati_quorum,_S.5_(Lalande,_Michel_Richard_de) IMSLP]
   * S.6 : Ad te levavi oculos (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_123_(122) Psalm 123(122)] [http://imslp.org/wiki/Ad_te_levavi_oculos,_S.6_(Lalande,_Michel_Richard_de) IMSLP]
   * S.7 : Audite cæli (1683) [http://imslp.org/wiki/Audite_caeli,_S.7_(Lalande,_Michel_Richard_de) IMSLP]
-  * S.8 : Ecce nunc benedicite (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_134_(133) Psalm 134(133)]
+  * S.8 : Ecce nunc benedicite (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_134_(133) Psalm 134(133)] [http://imslp.org/wiki/Ecce_nunc_benedicte,_S.8_(Lalande,_Michel_Richard_de) IMSLP]
   * S.9 : Jubilate Deo (1683) [http://fr.wikipedia.org/wiki/Psaume_100_(99) Psalm 100(99)]
   * S.10 : Laudate Dominum omnes gentes (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_117_(116) Psalm 117(116)]
   * S.11 : Laudate Dominum omnes gentes (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_47_(46) Psalm 47(46)]
@@ -34,7 +34,7 @@ From the catalogue of Lionel Sawkins
   * S.21 : [http://imslp.org/wiki/Christe_redemptor_omnium,_S.21_(Lalande,_Michel_Richard_de) IMSLP]
   * S.22 : [http://imslp.org/wiki/Cantemus_Domino_gloriam,_S.22_(Lalande,_Michel_Richard_de) IMSLP]
   * S.23 : [http://imslp.org/wiki/De_Profundis,_S.23_(Lalande,_Michel_Richard_de) IMSLP]
-  * S.24 :
+  * S.24 : [http://imslp.org/wiki/Exaudi_Deus_deprecationem_meam,_S.24_(Lalande,_Michel_Richard_de) IMSLP] [http://imslp.org/wiki/Exaudi_Deus,_S.24_(Lalande,_Michel_Richard_de) IMSLP2]
   * S.25 :
   * S.26 :
   * S.27 :
@@ -76,16 +76,16 @@ From the catalogue of Lionel Sawkins
   * S.63 :
   * S.64 : [http://imslp.org/wiki/Ad_te_Domino_clamabo,_S.64_(Lalande,_Michel_Richard_de) IMSLP]
   * S.65 : [http://imslp.org/wiki/Dominus_regnavit,_S.65_(Lalande,_Michel_Richard_de) IMSLP]
-  * S.66 :
+  * S.66 : [http://imslp.org/wiki/Exaltabo_te,_Domine,_S.66_(Lalande,_Michel_Richard_de) IMSLP]
   * S.67 :
   * S.68 : [http://imslp.org/wiki/Confitemini_Domino,_S.68_(1st_Version)_(Lalande,_Michel_Richard_de) IMSLP]
   * S.69 :
   * S.70 :
-  * S.71 :
+  * S.71 : [http://imslp.org/wiki/Exurgat_Deus,_S.71_(Lalande,_Michel_Richard_de) IMSLP]
   * S.72 : [http://imslp.org/wiki/Cantate_Domino_canticum_novum,_S.72_(Lalande,_Michel_Richard_de) IMSLP]
   * S.73 : [http://imslp.org/wiki/Dixit_Dominus,_S.73_(Lalande,_Michel_Richard_de) IMSLP]
   * S.74 :
-  * S.75 :
+  * S.75 : [http://imslp.org/wiki/Exultate_justi_in_Domino,_S.75_(Lalande,_Michel_Richard_de) IMSLP]
   * S.76 :
   * S.77 :
 
@@ -186,7 +186,7 @@ Presumably lost
   * S.150 : 
   * S.151 : 
   * S.152 : 
-  * S.153 : 
+  * S.153 : [http://imslp.org/wiki/Les_%C3%A9l%C3%A9mens,_S.153_(Lalande,_Michel_Richard_de) IMSLP]
   * S.154 : 
 
 === Symphonies ===

@@ -170,8 +170,8 @@ presumably 1711
 
   * S.131 : 
   * S.132 : 
-  * S.133 : Les Fontaines de Versailles, mini opéra in six scenes, libretto by Antoine Maurel [http://imslp.org/wiki/Les_fontaines_de_Versailles,_S.133_(Lalande,_Michel_Richard_de) IMSLP]
-  * S.134 : Concert d'Esculape : donné au Roy chès Madame de Montespan, pièce d'Antoine Maurel [http://imslp.org/wiki/Concert_d%27Esculape,_S.134_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.133 : Les Fontaines de Versailles, mini opéra in six scenes, libretto by Antoine Maurel [http://imslp.org/wiki/Les_fontaines_de_Versailles,_S.133_(Lalande,_Michel_Richard_de) IMSLP] [http://clanfaw.free.fr/delalande_fontaines.pdf facsimile]
+  * S.134 : Concert d'Esculape : donné au Roy chès Madame de Montespan, pièce d'Antoine Maurel [http://imslp.org/wiki/Concert_d%27Esculape,_S.134_(Lalande,_Michel_Richard_de) IMSLP] [http://clanfaw.free.fr/delalande_esculapes.pdf facsimile]
   * S.135 : 
   * S.136 : Ballet de la jeunesse présenté devant Sa Majesté à Versailles sur Le petit Theastre Le 28e janvier l'an 1686 [http://imslp.org/wiki/Ballet_de_la_jeunesse_(Lalande,_Michel_Richard_de) IMSLP]
   * S.137 : 
@@ -218,6 +218,6 @@ Symphonies pour les Soupers du Roy
 
 === Autres pièces ===
 
-  * S.173 : Noels en trio avec un Carillon pour les flûtes, violons et hautbois [http://imslp.org/wiki/La_Fugue_de_Mr._de_La_Lande,_S.173.10_(Lalande,_Michel_Richard_de) IMSLP] [http://imslp.org/wiki/No%C3%ABls_en_Trio_avec_un_Carillon,_S.173.24_(Lalande,_Michel_Richard_de) IMSLP2]
+  * S.173 : Noels en trio avec un Carillon pour les flûtes, violons et hautbois [http://imslp.org/wiki/La_Fugue_de_Mr._de_La_Lande,_S.173.10_(Lalande,_Michel_Richard_de) IMSLP]  [http://imslp.org/wiki/No%C3%ABls_en_Trio_avec_un_Carillon,_S.173.24_(Lalande,_Michel_Richard_de) IMSLP2] [http://clanfaw.free.fr/delalande_noels.pdf Tufvesson]
   * S.174 : 
   * S.175 : 

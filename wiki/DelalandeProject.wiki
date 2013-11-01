@@ -106,28 +106,28 @@ Presumably lost
 === Petits motets ===
 
   * S.87 : Miserere mei Deus secundum for solo voice and gregorian choir [http://fr.wikipedia.org/wiki/Psaume_51_(50) Psalm 51(50)] [http://imslp.org/wiki/Miserere,_S.87_(Lalande,_Michel_Richard_de) IMSLP]
-  * S.88 :
-  * S.89 :
-  * S.90 :
+  * S.88 : Nunc dimitis (a voix seule) (lost ?)
+  * S.89 : O filii et filiae
+  * S.90 : Regina caeli (lost ?)
 
 === Petits motets d'après grands motets ===
 
-  * S.91 :
-  * S.92 :
-  * S.93 :
-  * S.94 :
-  * S.95 :
-  * S.96 :
-  * S.97 :
-  * S.98 :
-  * S.99 :
-  * S.100 :
-  * S.101 :
-  * S.102 :
-  * S.103 :
-  * S.104 :
-  * S.105 :
-  * S.106 :
+  * S.91 : Panis angelicus
+  * S.92 : Cantemus Domino
+  * S.93 : Afferte Domino
+  * S.94 : Magnificavit Dominus
+  * S.95 : Exultatae justi
+  * S.96 : Sitivit anima mea
+  * S.97 : Benedictus Dominus, qui non dedit
+  * S.98 : Confitemini
+  * S.99 : Memoriam fecit
+  * S.100 : Quid retribuam
+  * S.101 : Vanum est vobis
+  * S.102 : In memoria aeterna
+  * S.103 : Benedictus Dominus, quoniam
+  * S.104 : Exultent et laetentur
+  * S.105 : Miserator et misericors
+  * S.106 : Adorate Deum
 
 === Motets Domine, salvum fac regem ===
 

@@ -2,7 +2,8 @@
 
 = Introduction =
 
-The aim of the project is to edit a book with the entire work of Michel-Richard Delalande
+The aim of the project is to edit an open-source book with the entire work of Michel-Richard Delalande.
+The book will propose a collection of Delalande's work in numerical prints along with the Lilypond source code.
 
 
 = List of works =

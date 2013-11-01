@@ -105,7 +105,7 @@ Presumably lost
 
 === Petits motets ===
 
-  * S.87 : [http://imslp.org/wiki/Miserere,_S.87_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.87 : Miserere mei Deus secundum for solo voice and gregorian choir [http://fr.wikipedia.org/wiki/Psaume_51_(50) Psalm 51(50)] [http://imslp.org/wiki/Miserere,_S.87_(Lalande,_Michel_Richard_de) IMSLP]
   * S.88 :
   * S.89 :
   * S.90 :
@@ -131,6 +131,8 @@ Presumably lost
 
 === Motets Domine, salvum fac regem ===
 
+Domine, salvum fac regem [http://fr.wikipedia.org/wiki/Domine,_salvum_fac_regem motet]
+
   * S.107 : 
   * S.108 : 
   * S.109 : 
@@ -143,21 +145,23 @@ Presumably lost
 
 === Leçons de Ténèbres ===
 
+presumably 1711
+
   * S.116 : 
   * S.117 : 
-  * S.118 : [http://imslp.org/wiki/Le%C3%A7ons_de_T%C3%A9n%C3%A8bres,_S.118,_121,_124_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.118 : 3e Leçon du Mercredi[http://imslp.org/wiki/Le%C3%A7ons_de_T%C3%A9n%C3%A8bres,_S.118,_121,_124_(Lalande,_Michel_Richard_de) IMSLP]
   * S.119 : 
   * S.120 : 
-  * S.121 : [http://imslp.org/wiki/Le%C3%A7ons_de_T%C3%A9n%C3%A8bres,_S.118,_121,_124_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.121 : 3e Leçon du Jeudi [http://imslp.org/wiki/Le%C3%A7ons_de_T%C3%A9n%C3%A8bres,_S.118,_121,_124_(Lalande,_Michel_Richard_de) IMSLP]
   * S.122 : 
   * S.123 : 
-  * S.124 : [http://imslp.org/wiki/Le%C3%A7ons_de_T%C3%A9n%C3%A8bres,_S.118,_121,_124_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.124 : 3d leçon du Vendredi [http://imslp.org/wiki/Le%C3%A7ons_de_T%C3%A9n%C3%A8bres,_S.118,_121,_124_(Lalande,_Michel_Richard_de) IMSLP]
 
 === Autres pièces sacrées ===
 
   * S.125 : 
   * S.126 : 
-  * S.127 : 
+  * S.127 : Cantique II sur le bonheur des justes (1694)
   * S.128 : 
   * S.129 : 
   * S.130 : 
@@ -166,30 +170,32 @@ Presumably lost
 
   * S.131 : 
   * S.132 : 
-  * S.133 : [http://imslp.org/wiki/Les_fontaines_de_Versailles,_S.133_(Lalande,_Michel_Richard_de) IMSLP]
-  * S.134 : [http://imslp.org/wiki/Concert_d%27Esculape,_S.134_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.133 : Les Fontaines de Versailles, mini opéra in six scenes, libretto by Antoine Maurel [http://imslp.org/wiki/Les_fontaines_de_Versailles,_S.133_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.134 : Concert d'Esculape : donné au Roy chès Madame de Montespan, pièce d'Antoine Maurel [http://imslp.org/wiki/Concert_d%27Esculape,_S.134_(Lalande,_Michel_Richard_de) IMSLP]
   * S.135 : 
-  * S.136 : [http://imslp.org/wiki/Ballet_de_la_jeunesse_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.136 : Ballet de la jeunesse présenté devant Sa Majesté à Versailles sur Le petit Theastre Le 28e janvier l'an 1686 [http://imslp.org/wiki/Ballet_de_la_jeunesse_(Lalande,_Michel_Richard_de) IMSLP]
   * S.137 : 
   * S.138 : 
   * S.139 : 
   * S.140 : 
   * S.141 : 
   * S.142 : 
-  * S.143 : 
-  * S.144 : 
+  * S.143 : L’Amour fléchi par la constance (1697)
+  * S.144 : Intermèdes de Musique et de Danse de Mirtil et Mélicerte, pastoralle héroïque. Nouvellement au Théâtre
   * S.145 : 
   * S.146 : 
   * S.147 : 
   * S.148 : 
   * S.149 : 
-  * S.150 : 
+  * S.150 : Le Ballet de la Paix (1713)
   * S.151 : 
-  * S.152 : 
-  * S.153 : [http://imslp.org/wiki/Les_%C3%A9l%C3%A9mens,_S.153_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.152 : Symphonies des Folies de Cardenio (1720)
+  * S.153 : Les Élémens, ballet dansé par le Roy, dans son palais des Thuilleries, Le 22 octobre 1721 [http://imslp.org/wiki/Les_%C3%A9l%C3%A9mens,_S.153_(Lalande,_Michel_Richard_de) IMSLP]
   * S.154 : 
 
 === Symphonies ===
+
+Symphonies pour les Soupers du Roy
 
   * S.155 : 
   * S.156 : 
@@ -197,7 +203,7 @@ Presumably lost
   * S.158 : 
   * S.159 : 
   * S.160 : 
-  * S.161 : 
+  * S.161 : Le Deuxième Fantaisie ou Caprice que le Roy demandait souvent
   * S.162 : 
   * S.163 : 
   * S.164 : 
@@ -212,6 +218,6 @@ Presumably lost
 
 === Autres pièces ===
 
-  * S.173 : [http://imslp.org/wiki/La_Fugue_de_Mr._de_La_Lande,_S.173.10_(Lalande,_Michel_Richard_de) IMSLP] [http://imslp.org/wiki/No%C3%ABls_en_Trio_avec_un_Carillon,_S.173.24_(Lalande,_Michel_Richard_de) IMSLP2]
+  * S.173 : Noels en trio avec un Carillon pour les flûtes, violons et hautbois [http://imslp.org/wiki/La_Fugue_de_Mr._de_La_Lande,_S.173.10_(Lalande,_Michel_Richard_de) IMSLP] [http://imslp.org/wiki/No%C3%ABls_en_Trio_avec_un_Carillon,_S.173.24_(Lalande,_Michel_Richard_de) IMSLP2]
   * S.174 : 
   * S.175 : 

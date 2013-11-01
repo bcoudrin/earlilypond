@@ -11,10 +11,10 @@ From the catalogue of Lionel Sawkins
 
 === Grands motets ===
 
-  * S.1 : 
-  * S.2 :
-  * S.3 :
-  * S.4 :
+  * S.1 : _Dixit Dominus_ (1680, first version) [http://fr.wikipedia.org/wiki/Psaume_110_(109) Psaum 110(109)]
+  * S.2 : Magnificat (1681) (lost ?)
+  * S.3 : Deitatis majestatem (1682)
+  * S.4 : Afferte Dominod (1683) [http://fr.wikipedia.org/wiki/Psaume_29_(28) Psaum 29(28)]
   * S.5 :
   * S.6 :
   * S.7 :
@@ -110,7 +110,7 @@ Presumably lost
   * S.89 :
   * S.90 :
 
-=== Petits motets d'après grans motets ===
+=== Petits motets d'après grands motets ===
 
   * S.91 :
   * S.92 :

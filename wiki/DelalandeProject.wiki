@@ -133,15 +133,15 @@ Presumably lost
 
 Domine, salvum fac regem [http://fr.wikipedia.org/wiki/Domine,_salvum_fac_regem motet]
 
-  * S.107 : 
-  * S.108 : 
-  * S.109 : 
-  * S.110 : 
-  * S.111 : 
-  * S.112 : 
-  * S.113 : 
-  * S.114 : 
-  * S.115 : 
+  * S.107 : Domine, salvum (in d)
+  * S.108 : Domine, salvum (in D)
+  * S.109 : Domine, salvum (in a)
+  * S.110 : Domine, salvum (in C)
+  * S.111 : Domine, salvum (in G)
+  * S.112 : Domine, salvum (in Bb)
+  * S.113 : Domine, salvum (in c)
+  * S.114 : Domine, salvum (in C) (doubtful ?)
+  * S.115 : Domine, salvum (in g) (doubtful ?)
 
 === Leçons de Ténèbres ===
 

@@ -198,24 +198,24 @@ presumably 1711
 
 Symphonies pour les Soupers du Roy
 
-  * S.155 : 
-  * S.156 : 
-  * S.157 : 
-  * S.158 : 
-  * S.159 : 
-  * S.160 : 
-  * S.161 : Le Deuxième Fantaisie ou Caprice que le Roy demandait souvent
-  * S.162 : 
-  * S.163 : 
-  * S.164 : 
-  * S.165 : 
-  * S.166 : 
-  * S.167 : 
-  * S.168 : 
-  * S.169 : 
-  * S.170 : 
-  * S.171 : 
-  * S.172 : 
+  * S.155 : Suite 1 (G, D et G)
+  * S.156 : Suite 2 (D, A, D)
+  * S.157 : Suite 3 (Gb, Bb, Gb)
+  * S.158 : Suite 4 (D#, Gb, D#, including Concert de Trompettes)
+  * S.159 : Suite 5 (Gb & D)
+  * S.160 : Suite 6 (Premier Caprice, D#)
+  * S.161 : Suite 7 (Le Deuxième Fantaisie ou Caprice que le Roy demandait souvent, Gb)
+  * S.162 : Suite 8 (Troisième Caprice, D#)
+  * S.163 : Suite 9 (Bb, F, Bb)
+  * S.164 : Suite 10 (E, B, E)
+  * S.165 : Suite 11 (F, Bb, F)
+  * S.166 : Suite 12 (D, A, D)
+  * S.167 : Suite 13 (A#, D, A)
+  * S.168 : Suite 14 (C, G, C)
+  * S.169 : Suite 15 (D, G, D)
+  * S.170 : Suite 16 (G, C)
+  * S.171 : Suite 17 (Première petite Suite, Gb)
+  * S.172 : Suite 18 (Deuxième petite Suite, D)
 
 === Autres pièces ===
 

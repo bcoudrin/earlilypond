@@ -14,10 +14,10 @@ From the catalogue of Lionel Sawkins
   * S.1 : _Dixit Dominus_ (1680, first version) [http://fr.wikipedia.org/wiki/Psaume_110_(109) Psalm 110(109)]
   * S.2 : Magnificat (1681) (lost ?)
   * S.3 : Deitatis majestatem (1682)
-  * S.4 : Afferte Dominod (1683) [http://fr.wikipedia.org/wiki/Psaume_29_(28) Psalm 29(28)]
-  * S.5 : Beati quorum (1683) [http://fr.wikipedia.org/wiki/Psaume_32_(31) Psalm 32(21)]
-  * S.6 : Ad te levavi oculos (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_123_(122) Psalm 123(122)]
-  * S.7 : Audite cæli (1683)
+  * S.4 : Afferte Dominod (1683) [http://fr.wikipedia.org/wiki/Psaume_29_(28) Psalm 29(28)] [http://imslp.org/wiki/Afferte_Domino,_S.4_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.5 : Beati quorum (1683) [http://fr.wikipedia.org/wiki/Psaume_32_(31) Psalm 32(21)] [http://imslp.org/wiki/Beati_quorum,_S.5_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.6 : Ad te levavi oculos (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_123_(122) Psalm 123(122)] [http://imslp.org/wiki/Ad_te_levavi_oculos,_S.6_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.7 : Audite cæli (1683) [http://imslp.org/wiki/Audite_caeli,_S.7_(Lalande,_Michel_Richard_de) IMSLP]
   * S.8 : Ecce nunc benedicite (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_134_(133) Psalm 134(133)]
   * S.9 : Jubilate Deo (1683) [http://fr.wikipedia.org/wiki/Psaume_100_(99) Psalm 100(99)]
   * S.10 : Laudate Dominum omnes gentes (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_117_(116) Psalm 117(116)]
@@ -31,8 +31,8 @@ From the catalogue of Lionel Sawkins
   * S.18 : Laudate pueri Dominum (1686) [http://en.wikipedia.org/wiki/Psalm_113 Psalm 113(112)]
   * S.19 : Lauda Jerusalem Dominum (1689) [http://fr.wikipedia.org/wiki/Psaume_147_(146-147) Psalm 147:12-20(147)]
   * S.20 : Deus, Deus meus ad te luce vigilo (1685) [http://fr.wikipedia.org/wiki/Psaume_63_(62) Psalm 63(62)]
-  * S.21 :
-  * S.22 :
+  * S.21 : [http://imslp.org/wiki/Christe_redemptor_omnium,_S.21_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.22 : [http://imslp.org/wiki/Cantemus_Domino_gloriam,_S.22_(Lalande,_Michel_Richard_de) IMSLP]
   * S.23 :
   * S.24 :
   * S.25 :
@@ -49,40 +49,40 @@ From the catalogue of Lionel Sawkins
   * S.36 :
   * S.37 :
   * S.38 :
-  * S.39 :
+  * S.39 : [http://imslp.org/wiki/Beatus_vir,_S.39_(Lalande,_Michel_Richard_de) IMSLP]
   * S.40 :
   * S.41 :
   * S.42 :
   * S.43 :
-  * S.44 :
+  * S.44 : [http://imslp.org/wiki/Benedictus_Dominus_Deus_meus,_S.44_(Lalande,_Michel_Richard_de) IMSLP]
   * S.45 :
   * S.46 :
   * S.47 :
-  * S.48 :
-  * S.49 :
+  * S.48 : [http://imslp.org/wiki/Confitebor_tibi_Domine_in_toto_corde_meo,_S.48_(Lalande,_Michel_Richard_de) IMSLP]
+  * S.49 : [http://imslp.org/wiki/Credidi_propter,_S.49_(Lalande,_Michel_Richard_de) IMSLP]
   * S.50 :
   * S.51 :
   * S.52 :
   * S.53 :
   * S.54 :
   * S.55 :
-  * S.56 :
+  * S.56 : [http://imslp.org/wiki/Confitebor_tibi_Domine_in_consilio,_S.56_(Lalande,_Michel_Richard_de) IMSLP]
   * S.57 :
   * S.58 :
-  * S.59 :
+  * S.59 : [http://imslp.org/wiki/Confitebimur_tibi_Deus,_S.59_(Lalande,_Michel_Richard_de) IMSLP]
   * S.60 :
   * S.61 :
   * S.62 :
   * S.63 :
-  * S.64 :
+  * S.64 : [http://imslp.org/wiki/Ad_te_Domino_clamabo,_S.64_(Lalande,_Michel_Richard_de) IMSLP]
   * S.65 :
   * S.66 :
   * S.67 :
-  * S.68 :
+  * S.68 : [http://imslp.org/wiki/Confitemini_Domino,_S.68_(1st_Version)_(Lalande,_Michel_Richard_de) IMSLP]
   * S.69 :
   * S.70 :
   * S.71 :
-  * S.72 :
+  * S.72 : [http://imslp.org/wiki/Cantate_Domino_canticum_novum,_S.72_(Lalande,_Michel_Richard_de) IMSLP]
   * S.73 :
   * S.74 :
   * S.75 :
@@ -167,9 +167,9 @@ Presumably lost
   * S.131 : 
   * S.132 : 
   * S.133 : 
-  * S.134 : 
+  * S.134 : [http://imslp.org/wiki/Concert_d%27Esculape,_S.134_(Lalande,_Michel_Richard_de) IMSLP]
   * S.135 : 
-  * S.136 : 
+  * S.136 : [http://imslp.org/wiki/Ballet_de_la_jeunesse_(Lalande,_Michel_Richard_de) IMSLP]
   * S.137 : 
   * S.138 : 
   * S.139 : 

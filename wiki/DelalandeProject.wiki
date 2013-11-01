@@ -19,7 +19,7 @@ From the catalogue of Lionel Sawkins
   * S.6 : Ad te levavi oculos (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_123_(122) Psalm 123(122)] [http://imslp.org/wiki/Ad_te_levavi_oculos,_S.6_(Lalande,_Michel_Richard_de) IMSLP]
   * S.7 : Audite cæli (1683) [http://imslp.org/wiki/Audite_caeli,_S.7_(Lalande,_Michel_Richard_de) IMSLP]
   * S.8 : Ecce nunc benedicite (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_134_(133) Psalm 134(133)] [http://imslp.org/wiki/Ecce_nunc_benedicte,_S.8_(Lalande,_Michel_Richard_de) IMSLP]
-  * S.9 : Jubilate Deo (1683) [http://fr.wikipedia.org/wiki/Psaume_100_(99) Psalm 100(99)]
+  * S.9 : Jubilate Deo (1683) [http://fr.wikipedia.org/wiki/Psaume_100_(99) Psalm 100(99)] [http://imslp.org/wiki/Jubilate_Deo_omnis_terra,_S.9_(Lalande,_Michel_Richard_de) IMSLP]
   * S.10 : Laudate Dominum omnes gentes (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_117_(116) Psalm 117(116)]
   * S.11 : Laudate Dominum omnes gentes (1683, 1689) [http://fr.wikipedia.org/wiki/Psaume_47_(46) Psalm 47(46)]
   * S.12 : Quam dilecta (before 1683, modified 1689, 1704) [http://fr.wikipedia.org/wiki/Psaume_84_(83) Psalm 84(83)]
@@ -29,13 +29,13 @@ From the catalogue of Lionel Sawkins
   * S.16 : Deus miseratur nostri et benedicat nobis (1687) [http://fr.wikipedia.org/wiki/Psaume_67_(66) Psalm 67(66)] [http://imslp.org/wiki/Deus_misereatur_nostri,_S.16_(Lalande,_Michel_Richard_de) IMSLP]
   * S.17 : Domine, Dominus nostre (1686) [http://fr.wikipedia.org/wiki/Psaume_8 Psaum 8]
   * S.18 : Laudate pueri Dominum (1686) [http://en.wikipedia.org/wiki/Psalm_113 Psalm 113(112)]
-  * S.19 : Lauda Jerusalem Dominum (1689) [http://fr.wikipedia.org/wiki/Psaume_147_(146-147) Psalm 147:12-20(147)]
+  * S.19 : Lauda Jerusalem Dominum (1689) [http://fr.wikipedia.org/wiki/Psaume_147_(146-147) Psalm 147:12-20(147)] [http://imslp.org/wiki/Lauda_Jerusalem_Dominum,_S.19_(Lalande,_Michel_Richard_de) IMSLP]
   * S.20 : Deus, Deus meus ad te luce vigilo (1685) [http://fr.wikipedia.org/wiki/Psaume_63_(62) Psalm 63(62)] [http://imslp.org/wiki/Deus,_Deus_meus_ad_te_luce_vigilo,_S.20_(Lalande,_Michel_Richard_de) IMSLP]
   * S.21 : [http://imslp.org/wiki/Christe_redemptor_omnium,_S.21_(Lalande,_Michel_Richard_de) IMSLP]
   * S.22 : [http://imslp.org/wiki/Cantemus_Domino_gloriam,_S.22_(Lalande,_Michel_Richard_de) IMSLP]
   * S.23 : [http://imslp.org/wiki/De_Profundis,_S.23_(Lalande,_Michel_Richard_de) IMSLP]
   * S.24 : [http://imslp.org/wiki/Exaudi_Deus_deprecationem_meam,_S.24_(Lalande,_Michel_Richard_de) IMSLP] [http://imslp.org/wiki/Exaudi_Deus,_S.24_(Lalande,_Michel_Richard_de) IMSLP2]
-  * S.25 :
+  * S.25 : [http://imslp.org/wiki/In_Convertendo,_S.25_(Lalande,_Michel_Richard_de) IMSLP]
   * S.26 :
   * S.27 :
   * S.28 : [http://imslp.org/wiki/Domine_non_est_exaltatum,_S.28_(Lalande,_Michel_Richard_de) IMSLP]
@@ -48,7 +48,7 @@ From the catalogue of Lionel Sawkins
   * S.35 :
   * S.36 :
   * S.37 :
-  * S.38 :
+  * S.38 : [http://imslp.org/wiki/Judica_me_Deus,_S.38_(Lalande,_Michel_Richard_de) IMSLP]
   * S.39 : [http://imslp.org/wiki/Beatus_vir,_S.39_(Lalande,_Michel_Richard_de) IMSLP]
   * S.40 :
   * S.41 :
@@ -56,7 +56,7 @@ From the catalogue of Lionel Sawkins
   * S.43 :
   * S.44 : [http://imslp.org/wiki/Benedictus_Dominus_Deus_meus,_S.44_(Lalande,_Michel_Richard_de) IMSLP]
   * S.45 :
-  * S.46 :
+  * S.46 : [http://imslp.org/wiki/Laudate_Dominum_in_sanctis_ejus,_S.46_(Lalande,_Michel_Richard_de) IMSLP]
   * S.47 :
   * S.48 : [http://imslp.org/wiki/Confitebor_tibi_Domine_in_toto_corde_meo,_S.48_(Lalande,_Michel_Richard_de) IMSLP]
   * S.49 : [http://imslp.org/wiki/Credidi_propter,_S.49_(Lalande,_Michel_Richard_de) IMSLP]
@@ -67,7 +67,7 @@ From the catalogue of Lionel Sawkins
   * S.54 : [http://imslp.org/wiki/Deus_noster_refugium,_S.54_(Lalande,_Michel_Richard_de) IMSLP]
   * S.55 :
   * S.56 : [http://imslp.org/wiki/Confitebor_tibi_Domine_in_consilio,_S.56_(Lalande,_Michel_Richard_de) IMSLP]
-  * S.57 :
+  * S.57 : [http://imslp.org/wiki/Laudate_Dominum_quoniam_bonus,_S.57_(Lalande,_Michel_Richard_de) IMSLP]
   * S.58 :
   * S.59 : [http://imslp.org/wiki/Confitebimur_tibi_Deus,_S.59_(Lalande,_Michel_Richard_de) IMSLP]
   * S.60 :
@@ -145,13 +145,13 @@ Presumably lost
 
   * S.116 : 
   * S.117 : 
-  * S.118 : 
+  * S.118 : [http://imslp.org/wiki/Le%C3%A7ons_de_T%C3%A9n%C3%A8bres,_S.118,_121,_124_(Lalande,_Michel_Richard_de) IMSLP]
   * S.119 : 
   * S.120 : 
-  * S.121 : 
+  * S.121 : [http://imslp.org/wiki/Le%C3%A7ons_de_T%C3%A9n%C3%A8bres,_S.118,_121,_124_(Lalande,_Michel_Richard_de) IMSLP]
   * S.122 : 
   * S.123 : 
-  * S.124 : 
+  * S.124 : [http://imslp.org/wiki/Le%C3%A7ons_de_T%C3%A9n%C3%A8bres,_S.118,_121,_124_(Lalande,_Michel_Richard_de) IMSLP]
 
 === Autres pièces sacrées ===
 
@@ -166,7 +166,7 @@ Presumably lost
 
   * S.131 : 
   * S.132 : 
-  * S.133 : 
+  * S.133 : [http://imslp.org/wiki/Les_fontaines_de_Versailles,_S.133_(Lalande,_Michel_Richard_de) IMSLP]
   * S.134 : [http://imslp.org/wiki/Concert_d%27Esculape,_S.134_(Lalande,_Michel_Richard_de) IMSLP]
   * S.135 : 
   * S.136 : [http://imslp.org/wiki/Ballet_de_la_jeunesse_(Lalande,_Michel_Richard_de) IMSLP]
@@ -212,6 +212,6 @@ Presumably lost
 
 === Autres pièces ===
 
-  * S.173 : 
+  * S.173 : [http://imslp.org/wiki/La_Fugue_de_Mr._de_La_Lande,_S.173.10_(Lalande,_Michel_Richard_de) IMSLP]
   * S.174 : 
   * S.175 : 

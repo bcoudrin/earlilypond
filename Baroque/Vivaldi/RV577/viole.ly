@@ -45,9 +45,9 @@ violafirst = \relative c' {
   r8 a a a e e e e
   d d d d cis cis cis cis
   a a a a a a a a
-  a4 r8 d16 c bes8 a16 g a8 a,
-  g'4. d'16 c bes8 a16 g a8 a,
-  d4 r r2
+  a4 r8 d16 c bes8 a16 g a8 a
+  g4. d'16 c bes8 a16 g a8 a
+  d,4 r r2
   R1*11
   r2 bes''16 [bes bes bes bes bes bes bes]
   bes [bes bes bes bes bes bes bes] a [a a a a a a a]

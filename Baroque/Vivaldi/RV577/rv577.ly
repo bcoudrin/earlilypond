@@ -19,8 +19,8 @@
   composer = "Antonio Vivaldi"
   composerDate = "1678-1741"
   date = "ca 1720"
-  title = "Concerto in Sol minore"
-  subtitle = \markup \center-column { "per l'Orchestra di Dresda" "RV 577"}
+  title = "Concerto per l'Orchestra di Dresda"
+  subtitle = \markup \center-column { "in Sol minore" "RV 577"}
   source = \markup \left-column {
     "Sources : "
      "[1] Concerto del Vivaldi per l'Orchestra di Dresda, collection Foà vol.32 (339-354), Bi­blioteca Nazionale Universitaria, Torino. "
@@ -84,7 +84,7 @@ controlthird = {
 
 \score {
   <<
-    \new Staff << \controlfirst >> 
+    \new Lyrics << \controlfirst >> 
     \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "principale"} \violinoprincipalefirst >>
     \new StaffGroup <<
       \set StaffGroup.instrumentName = \markup\fontsize #-1 "Violini"
@@ -105,12 +105,12 @@ controlthird = {
     \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto" \fagottofirst >>
     \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Bassi tutti" \bassituttifirst >>
   >>
-  \layout {\layoutCommons }
+  \layout {\layoutCommonsWithEmptyStaves }
 }
 
 \score {
   <<
-    \new Staff << \controlsecond >> 
+    \new Lyrics << \controlsecond >> 
     \new StaffGroup <<
       \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "Solo ò" "Hautbois"} \violinoprincipalesecond >>
       \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto" \fagottosecond >>
@@ -121,7 +121,7 @@ controlthird = {
 
 \score {
   <<
-    \new Staff << \controlthird >> 
+    \new Lyrics << \controlthird >> 
     \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "principale"} \violinoprincipalethird >>
     \new StaffGroup <<
       \set StaffGroup.instrumentName = \markup\fontsize #-1 "Violini"
@@ -142,7 +142,7 @@ controlthird = {
     \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto" \fagottothird >>
     \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Bassi tutti" \bassituttithird >>
   >>
-  \layout {\layoutCommons }
+  \layout {\layoutCommonsWithEmptyStaves }
 }
 
 % Viola

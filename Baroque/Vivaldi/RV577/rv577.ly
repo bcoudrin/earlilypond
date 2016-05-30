@@ -77,7 +77,7 @@ controlsecond = {
 
 controlthird = {
   \mark \markup \bold \large "Allegro"
-  s2.*133 \partial 4 s4 \bar "|."
+  s2.*132 \partial 4 s4 \bar "|."
   \mark \markup \fontsize #-2 \center-column {"DC sino" "al Segno" \musicglyph #"scripts.ufermata" }
 }
 

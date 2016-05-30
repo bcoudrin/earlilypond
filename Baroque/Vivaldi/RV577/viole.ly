@@ -19,7 +19,7 @@ violafirst = \relative c' {
   d8 d4 d8 d d4 d8
   d8 d d d fis d d d
   d d d d d d d d
-  g d b g d' d4 d8
+  g d bes g d' d4 d8
   d d4 d8 d d d d
   d'4 r r2
   r2 r8 bes bes bes
@@ -65,9 +65,9 @@ violafirst = \relative c' {
   d d d d g d bes g
   R1*2
   r2 g8 g g g
-  d d d d g g g g
-  c c c c f f f f
-  bes, bes bes bes ees4 r
+  c, c c c f f f f
+  bes bes bes bes ees ees ees ees
+  a, a a a d4 r
   R1*9
   \partial 4 r4
 }
@@ -89,4 +89,73 @@ violathird = \relative c {
   \key g \minor
   \clef alto
   r8 g'16 [g] g8 [g16 g] g4
+  r8 g16 [g] g8 [g16 g] g4
+  r8 d'16 [d] d8 [d16 d] d4
+  r8 d16 [d] d8 [d16 d] d4
+  r8 g,16 [g] g8 [g16 g] g4
+  d''2. ~
+  d2 g,4
+  g2 c4
+  c2 f,4
+  f2.
+  g
+  e2 a4
+  a2 fis4
+  d r r
+  bes r r
+  g'8 [f16 ees! d8 c bes a]
+  g4\fermata r r
+  d' ees d
+  d r r
+  R2.*21
+  r8 d16 [d] d8 [d16 d] d4
+  r8 a16 [a] a8 [a16 a] a4
+  r8 d16 [d] d8 [d16 d] d4
+  a'2. ~
+  a2 d,4
+  gis2.
+  e2 a4
+  a2.
+  bes
+  a
+  a4 r r
+  R2.*25
+  bes2. ~
+  bes
+  c2 f,4
+  f2.
+  g
+  (f)
+  f4 r r
+  R2.*11
+  r8 g,16 [g] g8 [g16 g] g4
+  r8 g16 [g] g8 [g16 g] g4
+  r8 g16 [g] g8 [g16 g] g8 [ees']
+  d2 g4
+  g2.
+  aes
+  (g)
+  g4 r r
+  R2.*10
+  g4 r8 g g ees
+  c4 r r
+  f r8 f f d
+  bes4 r r
+  ees4 r8 ees ees c
+  a4 r8 fis' fis fis
+  d4 r8 d d d
+  fis4 r8 fis fis fis
+  d4 r8 d d d
+  d4 r r
+  g, g g
+  c c c
+  d d d
+  g, g g
+  c d d,
+  g g g
+  c c c
+  d d d
+  g, g g
+  c d d,
+  \partial 4 g
 }

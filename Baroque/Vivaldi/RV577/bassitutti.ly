@@ -17,6 +17,21 @@ bassituttifirst = \relative c {
   \key g \minor
   \clef bass
   g4 g g g
+  g g d' d
+  d d d d
+  g8 d bes g g4 g
+  g g g g
+  d' r r2
+  r2 r8 g, g g
+  r1
+  r8 c c c r2
+  r r8 d d d
+  d d d d d d d d
+  d d d d d d d d
+  d d d d g,4 r8 g'16 f
+  ees8 [ d16 c d8 d,] c'4. g'16 f
+  ees8 [ d16 c d8 d,] g4\fermata r
+  R1*11
 }
 
 bassituttisecond = \relative c {

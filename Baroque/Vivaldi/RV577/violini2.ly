@@ -96,6 +96,126 @@ violinosecundothird = \relative c''' {
   \time 3/4
   \key g \minor
   \clef treble
-  \override Beam.auto-knee-gap = #3
+  \override Beam.auto-knee-gap = #1
   g8 [g,,16 g g8 d'' g d]
+  | % 2
+  g [g,,16 g g8 d'' g d]
+  | % 3
+  fis [d,16 d d8 d' fis d]
+  | % 4
+  fis [d,16 d d8 d' fis d]
+  | % 5
+  g [g,,16 g g8 d'' g d]
+  | % 6
+  fis2. 
+  | % 7
+  f 
+  | % 8
+  e 
+  | % 9
+  ees 
+  | % 10
+  d ~
+  d
+  cis 
+  | % 13
+  c 
+  | % 14
+  bes4 r r 
+  | % 15
+  g'8 [f16 ees d8 c bes a]
+  | % 16
+  g [f16 ees d8 c bes a]
+  | % 17
+  g4\fermata r r
+  | % 18
+  bes'4 c a 
+  | % 19
+  g r r
+  R2.*21
+  d'8 [d,16 d d8 d' f d]
+  | % 42
+  cis [a,16 a a8 cis' e cis]
+  | % 43
+  d [d,16 d d8 d' f d]
+  | % 44
+  cis2. 
+  | % 45
+  c 
+  | % 46
+  b 
+  | % 47
+  cis 
+  | % 48
+  d ~
+  d
+  cis 
+  | % 51
+  d4 r r
+  R2.*25
+  f2. ~
+  f
+  ees 
+  | % 80
+  d 
+  | % 81
+  c ~
+  c
+  d4 r r 
+  R2.*11
+  c8 [g,16 g g8 c' ees c]
+  | % 96
+  d [g,,16 g g8 b' d b]
+  | % 97
+  c [g,16 g g8 c' ees c]
+  | % 98
+  b2. 
+  | % 99
+  c ~
+  c
+  b 
+  | % 102
+  c4 r r
+  R2.*10
+  ees4 r8 ees ees ees 
+  | % 114
+  ees4 r r 
+  | % 115
+  d4 r8 d d d 
+  | % 116
+  d4 r r 
+  | % 117
+  c4 r8 c c c 
+  | % 118
+  c4 r8 c c c 
+  | % 119
+  bes4 r8 bes bes bes 
+  | % 120
+  c4 r8 c c c 
+  | % 121
+  bes4 r8 bes bes bes 
+  | % 122
+  a4 r r
+  | % 123
+  bes4 bes bes 
+  | % 124
+  g g c 
+  | % 125
+  a a a 
+  | % 126
+  bes bes bes 
+  | % 127
+  g d' a 
+  | % 128
+  bes bes bes 
+  | % 129
+  g g c 
+  | % 130
+  a a a 
+  | % 131
+  bes bes bes 
+  | % 132
+  g8 c a4 a 
+  | % 133
+  \partial 4 bes 
 }

@@ -140,4 +140,143 @@ flautoprimothird = \relative c''' {
   \key g \minor
   \clef treble
   r8 g bes g bes4
+  | % 2
+  r8 g bes g bes4 
+  | % 3
+  r8 a d a d4 
+  | % 4
+  r8 a d a d4 
+  | % 5
+  r8 g, bes g bes4 
+  | % 6
+  r8 a a a a4 
+  | % 7
+  r8 b b b b4 
+  | % 8
+  r8 bes bes bes bes4 
+  | % 9
+  r8 a a a a4 
+  | % 10
+  r8 a a a a4 
+  | % 11
+  r8 g g g g4 
+  | % 12
+  r8 g g g g4 
+  | % 13
+  r8 fis fis fis fis4 
+  | % 14
+  g r r 
+  | % 15
+  g8 [f16 ees d8 c bes a]
+  | % 16
+  g' [f16 ees d8 c bes a]
+  | % 17
+  g4\fermata r r 
+  | % 18
+  bes'4 c a 
+  | % 19
+  bes r r
+  R2.*21
+  r8 f8 a f a4 
+  | % 42
+  r8 e a e a4 
+  | % 43
+  r8 f a f a4 
+  | % 44
+  r8 e e e e4 
+  | % 45
+  r8 fis fis fis fis4 
+  | % 46
+  r8 f f f f4 
+  | % 47
+  r8 e e e e4 
+  | % 48
+  r8 f f f f4 
+  | % 49
+  r8 e e e e4 
+  | % 50
+  r8 e e e e4 
+  | % 51
+  f r r 
+  R2.*3
+  r8 a8 \grace a8 (bes4.) a8 
+  | % 56
+  g8. g16 \grace g8 (a4.) g8 
+  | % 57
+  f8. f16 \grace f8 (g4.) f8 
+  | % 58
+  f2\trill e4 
+  | % 59
+  R2.*18
+  r8 d8 d d d4 
+  | % 78
+  r8 g g g g4 
+  | % 79
+  r8 a a a a4 
+  | % 80
+  r8 bes bes bes bes4 
+  | % 81
+  r8 bes bes bes bes4 
+  | % 82
+  r8 a a a a4 
+  | % 83
+  bes r r
+  R2.*11
+  r8 ees,8 g ees g4 
+  | % 96
+  r8 d f d f4 
+  | % 97
+  r8 ees g ees g4 
+  | % 98
+  r8 f f f f4 
+  | % 99
+  r8 ees ees ees ees4 
+  | % 100
+  r8 d d d d4 
+  | % 101
+  r8 d d d d4 
+  | % 102
+  ees r r
+  R2.*10
+  bes'4 r8 bes bes bes 
+  | % 114
+  a4 r r 
+  | % 115
+  a4 r8 a a a 
+  | % 116
+  g4 r r
+  | % 117
+  g4 r8 g g g 
+  | % 118
+  fis4 r8 fis fis fis 
+  | % 119
+  g4 r8 g g g 
+  | % 120
+  a4 r8 a a a 
+  | % 121
+  g4 r8 g g g 
+  | % 122
+  fis4 r r 
+  | % 123
+  d4 d d 
+  | % 124
+  ees ees ees 
+  | % 125
+  fis fis fis 
+  | % 126
+  d d d 
+  | % 127
+  ees a, a 
+  | % 128
+  d d d 
+  | % 129
+  ees ees ees 
+  | % 130
+  fis fis fis 
+  | % 131
+  d d d 
+  | % 132
+  ees d d 
+  | % 133
+  \partial 4 d 
 }

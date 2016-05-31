@@ -106,6 +106,177 @@ violinoprimothird = \relative c''' {
   \time 3/4
   \key g \minor
   \clef treble
-  \override Beam.auto-knee-gap = #4
+  \override Beam.auto-knee-gap = #2
   bes8 [g,,16 g g8 g'' bes g]
+  | % 2
+  bes [g,,16 g g8 g'' bes g]
+  | % 3
+  a [d,,16 d d8 fis' a fis]
+  | % 4
+  a [d,,16 d d8 fis' a fis]
+  | % 5
+  bes [g,,16 g g8 g'' bes g]
+  | % 6
+  a4 r r
+  | % 7
+  b2. 
+  | % 8
+  bes 
+  | % 9
+  a ~
+  a
+  g ~
+  g
+  fis2. 
+  | % 14
+  g4 r r
+  | % 15
+  g8 [f16 ees d8 c bes a]
+  | % 16
+  g [f16 ees d8 c bes a]
+  | % 17
+  g4\fermata r r 
+  | % 18
+  g''4 a fis 
+  | % 19
+  g r r
+  R2.
+  \omit TupletNumber \times 2/3{g8 (a bes)} \times 2/3{bes (a g)} \times 2/3{g (a bes)}
+  | % 22
+  \times 2/3{a bes c} \times 2/3{c bes a} \times 2/3{a bes c}
+  | % 23
+  \times 2/3{bes a g} \times 2/3{bes a g} \times 2/3{bes a g}
+  | % 24
+  \times 2/3{a g fis} \times 2/3{a g fis} \times 2/3{a g fis}
+  | % 25
+  \times 2/3{bes a g} \times 2/3{bes a g} \times 2/3{bes a g}
+  | % 26
+  \times 2/3{a g fis} \times 2/3{a g fis} \times 2/3{a g fis}
+  | % 27
+  g4 r r
+  R2.*13
+  f8 [d,16 d d8 f' a f]
+  | % 42
+  e [a,,16 a a8 e'' g e]
+  | % 43
+  f [d,16 d d8 f' a f]
+  | % 44
+  e4 r r 
+  | % 45
+  fis2. 
+  | % 46
+  f 
+  | % 47
+  e 
+  | % 48
+  f 
+  | % 49
+  e 
+  | % 50
+  e 
+  | % 51
+  f4 r r
+  R2.*26
+  g2. 
+  | % 79
+  a 
+  | % 80
+  bes ~
+  bes
+  a 
+  | % 83
+  bes8^\markup\italic{Solo} d,4 d8 ees ees 
+  | % 84
+  ees d4 d8 ees ees 
+  | % 85
+  ees d4 r4.
+  r4 r8 bes8 ees ees 
+  | % 87
+  \times 2/3{ees8 (d) ees} \times 2/3{ees (d) ees} \times 2/3{ees (d) ees} 
+  | % 88
+  ees8 a,4 a8 d d 
+  | % 89
+  \times 2/3{d c d} \times 2/3{d c d} \times 2/3{d c d} 
+  | % 90
+  d8 g,4 g8 c c 
+  | % 91
+  \times 2/3{c b c} \times 2/3{c b c} \times 2/3{c b c} 
+  | % 92
+  c8 f,4 f8 c' c 
+  | % 93
+  \times 2/3{b a b} \times 2/3{b a b} c8 ees 
+  | % 94
+  d c b4.\trill c8 
+  | % 95
+  <<{\stemDown c4} \\ {\stemUp g'8 g,,16 g}>> g8 ees'' g ees 
+  | % 96
+  f g,,16 g g8 d'' f d
+  | % 97
+  ees g,,16 g g8 ees'' g ees
+  | % 98
+  f2. 
+  | % 99
+  ees 
+  | % 100
+  d 
+  | % 101
+  d 
+  | % 102
+  c4 r r
+  R2.*3
+  \times 2/3{g'8^\markup\italic{Solo} a bes} \times 2/3{bes a g} \times 2/3{g a bes}
+  | % 107
+  \times 2/3{a bes c} \times 2/3{c bes a} \times 2/3{a bes c} 
+  | % 108
+  \times 2/3{bes a g} \times 2/3{bes a g} \times 2/3{bes a g} 
+  | % 109
+  \times 2/3{a g fis} \times 2/3{a g fis} \times 2/3{a g fis}
+  | % 110
+  \times 2/3{bes a g} \times 2/3{bes a g} \times 2/3{bes a g} 
+  | % 111
+  \times 2/3{a g fis} \times 2/3{a g fis} \times 2/3{a g fis} 
+  | % 112
+  g4 r r 
+  | % 113
+  bes4 r8 bes bes bes 
+  | % 114
+  a4 r r 
+  | % 115
+  a4 r8 a a a 
+  | % 116
+  g4 r r 
+  | % 117
+  g4 r8 g g g 
+  | % 118
+  fis4 r8 fis fis fis 
+  | % 119
+  g4 r8 g g g 
+  | % 120
+  a4 r8 a a a 
+  | % 121
+  g4 r8 g g g 
+  | % 122
+  fis4 r r 
+  | % 123
+  d4 d d 
+  | % 124
+  ees ees ees 
+  | % 125
+  fis fis fis 
+  | % 126
+  d d d 
+  | % 127
+  ees a, a 
+  | % 128
+  d d d 
+  | % 129
+  ees ees ees 
+  | % 130
+  fis fis fis 
+  | % 131
+  d d d 
+  | % 132
+  ees d d 
+  | % 133
+  \partial 4 d 
 }

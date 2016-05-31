@@ -135,4 +135,143 @@ flautosecundothird = \relative c'' {
   \key g \minor
   \clef treble
   r8 d g d g4
+  | % 2
+  r8 d g d g4 
+  | % 3
+  r8 d a' d, a'4 
+  | % 4
+  r8 d, a' d, a'4 
+  | % 5
+  r8 d, g d g4 
+  | % 6
+  r8 fis fis fis fis4 
+  | % 7
+  r8 f f f f4 
+  | % 8
+  r8 e e e e4 
+  | % 9
+  r8 ees ees ees ees4 
+  | % 10
+  r8 d d d d4 
+  | % 11
+  r8 d d d d4 
+  | % 12
+  r8 cis cis cis cis4 
+  | % 13
+  r8 c c c c4 
+  | % 14
+  bes r r
+  | % 15
+  g'8 [f16 ees d8 c bes a]
+  | % 16
+  g' [f16 ees d8 c bes a]
+  | % 17
+  g4 r r
+  | % 18
+  g'4 a fis 
+  | % 19
+  g r r
+  R2.*21
+  r8 d8 f d f4 
+  | % 42
+  r8 cis e cis e4 
+  | % 43
+  r8 d f d f4 
+  | % 44
+  r8 cis cis cis cis4 
+  | % 45
+  r8 c c c c4 
+  | % 46
+  r8 b b b b4 
+  | % 47
+  r8 cis cis cis cis4 
+  | % 48
+  r8 d d d d4 
+  | % 49
+  r8 d d d d4 
+  | % 50
+  r8 cis cis cis cis4 
+  | % 51
+  d r r
+  R2.*3
+  r8 f8 \grace f8 (g4.) f8 
+  | % 56
+  e8. e16 \grace e8 (f4.) e8 
+  | % 57
+  d8. d16 \grace d8 (e4.) d8 
+  | % 58
+  d2\trill cis4 
+  | % 59
+  R2.*18
+  r8 f8 f f f4 
+  | % 78
+  r8 f f f f4 
+  | % 79
+  r8 ees ees ees ees4 
+  | % 80
+  r8 d d d d4 
+  | % 81
+  r8 c c c c4 
+  | % 82
+  r8 c c c c4 
+  | % 83
+  d r r
+  R2.*11
+  r8 c8 ees c ees4 
+  | % 96
+  r8 b d b d4 
+  | % 97
+  r8 c ees c ees4 
+  | % 98
+  r8 b' b b b4 
+  | % 99
+  r8 c c c c4 
+  | % 100
+  r8 c c c c4 
+  | % 101
+  r8 b b b b4 
+  | % 102
+  c r r
+  R2.*10 
+  ees,4 r8 ees ees ees 
+  | % 114
+  ees4 r r
+  | % 115
+  d4 r8 d d d 
+  | % 116
+  d4 r r
+  | % 117
+  c4 r8 c c c 
+  | % 118
+  c4 r8 c c c 
+  | % 119
+  bes4 r8 bes bes bes 
+  | % 120
+  c4 r8 c c c 
+  | % 121
+  bes4 r8 bes bes bes 
+  | % 122
+  a4 r r
+  | % 123
+  bes4 bes bes 
+  | % 124
+  g g c 
+  | % 125
+  a a a 
+  | % 126
+  bes bes bes 
+  | % 127
+  g d' a 
+  | % 128
+  bes bes bes 
+  | % 129
+  g g c 
+  | % 130
+  a a a 
+  | % 131
+  bes bes bes 
+  | % 132
+  g8 c a4 a 
+  | % 133
+  \partial 4 bes 
 }

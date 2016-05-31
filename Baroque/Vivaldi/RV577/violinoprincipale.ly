@@ -133,7 +133,7 @@ violinoprincipalethird = \relative c''' {
   \time 3/4
   \key g \minor
   \clef treble
-  \override Beam.auto-knee-gap = #4
+  \override Beam.auto-knee-gap = #2
   bes8 [g,,16 g g8 g'' bes g]
   | % 2
   bes [g,,16 g g8 g'' bes g]
@@ -302,7 +302,7 @@ violinoprincipalethird = \relative c''' {
   | % 94
   f ees d4.\trill c8 
   | % 95
-  <<{\stemDown d4} \\ {\stemUp g8 g,,16 g}>> g8 ees'' g ees 
+  <<{\stemDown c4} \\ {\stemUp g'8 g,,16 g}>> g8 ees'' g ees 
   | % 96
   f g,,16 g g8 d'' f d 
   | % 97
@@ -317,7 +317,7 @@ violinoprincipalethird = \relative c''' {
   d 
   | % 102
   c4 r r
-  r2.
+  R2.
   \times 2/3 {g'8^\markup\italic{Solo} a bes} \times 2/3 {bes a g} \times 2/3 {g a bes}
   | % 105
   \times 2/3 {a bes c} \times 2/3 {c bes a} \times 2/3 {a bes c}

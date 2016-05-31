@@ -15,7 +15,7 @@
 \include "../../../include/format.ily"
 
 \header {
-  tagline = \markup { "Copyright : " \char ##x00A9 " 2013-2015 Earlilypond, Benjamin Coudrin" }
+  tagline = \markup { "Copyright : " \char ##x00A9 " 2013-2016 Earlilypond, Benjamin Coudrin" }
   composer = "Antonio Vivaldi"
   composerDate = "1678-1741"
   date = "ca 1720"
@@ -23,7 +23,7 @@
   subtitle = \markup \center-column { "in Sol minore" "RV 577"}
   source = \markup \left-column {
     "Sources : "
-     "[1] Concerto del Vivaldi per l'Orchestra di Dresda, collection Foà vol.32 (339-354), Bi­blioteca Nazionale Universitaria, Torino. "
+     "[1] Concerto del Vivaldi per l'Orchestra di Dresda, Ms Foà vol.32 (cc. 339r-354r), Bi­blioteca Nazionale Universitaria, Torino. "
     \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
   }
 }
@@ -49,6 +49,7 @@
     \fill-line { \override #'(font-name . "Calluna Light") \fontsize #-1 \fromproperty #'header:source }
     \vspace #2    
   }
+  %bookTitleMarkup = \pieceBigTitleMarkup
 }
 \markup\null
 
@@ -85,25 +86,40 @@ controlthird = {
 \score {
   <<
     \new Lyrics << \controlfirst >> 
-    \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "principale"} \violinoprincipalefirst >>
+    \new Staff <<
+      \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "principale"}
+      \set Staff.shortInstrumentName = \markup\fontsize #-1 \center-column{"Vp"}
+      \violinoprincipalefirst >>
     \new StaffGroup <<
       \set StaffGroup.instrumentName = \markup\fontsize #-1 "Violini"
+      \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "V"
       \new Staff << \violinoprimofirst >>
       \new Staff << \violinosecundofirst >>
     >>
     \new StaffGroup <<
       \set StaffGroup.instrumentName = \markup\fontsize #-1 "Hautbois"
+      \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "H"
       \new Staff << \hautboisprimofirst >>
       \new Staff << \hautboissecundofirst >>
     >>
     \new StaffGroup <<
       \set StaffGroup.instrumentName = \markup\fontsize #-1 "Flauti"
+      \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "Fl"
       \new Staff << \flautoprimofirst >>
       \new Staff << \flautosecundofirst >>
     >>
-    \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Viola" \violafirst >>
-    \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto" \fagottofirst >>
-    \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Bassi tutti" \bassituttifirst >>
+    \new Staff <<
+      \set Staff.instrumentName = \markup\fontsize #-1 "Viola"
+      \set Staff.shortInstrumentName = \markup\fontsize #-1 "Va"
+      \violafirst >>
+    \new Staff <<
+      \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto"
+      \set Staff.shortInstrumentName = \markup\fontsize #-1 "Fg"
+      \fagottofirst >>
+    \new Staff <<
+      \set Staff.instrumentName = \markup\fontsize #-1 "Bassi tutti"
+      \set Staff.shortInstrumentName = \markup\fontsize #-1 "B"
+      \bassituttifirst >>
   >>
   \layout {\layoutCommonsWithEmptyStaves }
 }

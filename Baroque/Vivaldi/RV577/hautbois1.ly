@@ -138,4 +138,141 @@ hautboisprimothird = \relative c''' {
   \key g \minor
   \clef treble
   bes4 r8 g bes g
+  | % 2
+  bes4 r8 g bes g 
+  | % 3
+  a4 r8 fis a fis 
+  | % 4
+  a4 r8 fis a fis 
+  | % 5
+  bes4 r8 g bes g 
+  | % 6
+  a4 r8 a a a 
+  | % 7
+  b4 r8 b b b 
+  | % 8
+  bes4 r8 bes bes bes 
+  | % 9
+  a4 r8 a a a 
+  | % 10
+  a4 r8 a a a 
+  | % 11
+  g4 r8 g g g 
+  | % 12
+  g4 r8 g g g 
+  | % 13
+  fis4 r8 fis fis fis 
+  | % 14
+  g4 r r 
+  | % 15
+  g8 [f16 ees d8 c bes a]
+  | % 16
+  g' [f16 ees d8 c bes a]
+  | % 17
+  g4\fermata r r
+  | % 18
+  g'4 a fis 
+  | % 19
+  g r4 r
+  R2.*21
+  a4 r8 f a f 
+  | % 42
+  e4 r8 e g e 
+  | % 43
+  f4 r8 f a f 
+  | % 44
+  e4 r8 e e e 
+  | % 45
+  fis4 r8 fis fis fis 
+  | % 46
+  f4 r8 f f f 
+  | % 47
+  e4 r8 e e e 
+  | % 48
+  f4 r8 f f f 
+  | % 49
+  e4 r8 e e e 
+  | % 50
+  e4 r8 e e e 
+  | % 51
+  f8. a16 \grace a8 (bes4.) a8 
+  | % 52
+  g8. g16 \grace g8 (a4.) g8 
+  | % 53
+  f8. f16 \grace f8 (g4.) f8 
+  | % 54
+  f2\trill e4 
+  | % 55
+  R2.*22
+  d4 r8 d d d 
+  | % 78
+  g4 r8 g g g 
+  | % 79
+  a4 r8 a a a 
+  | % 80
+  bes4 r8 bes bes bes 
+  | % 81
+  bes4 r8 bes bes bes 
+  | % 82
+  a4 r8 a a a 
+  | % 83
+  bes4 r r
+  R2.*11
+  g4 r8 ees g ees 
+  | % 96
+  f4 r8 d f d 
+  | % 97
+  ees4 r8 ees g ees 
+  | % 98
+  f4 r8 f f f 
+  | % 99
+  ees4 r8 ees ees ees 
+  | % 100
+  d4 r8 d d d 
+  | % 101
+  d4 r8 d d d 
+  | % 102
+  ees4 r r
+  R2.*10
+  bes'4 r8 bes bes bes 
+  | % 114
+  a4 r r 
+  | % 115
+  a4 r8 a a a 
+  | % 116
+  g4 r r
+  | % 117
+  g4 r8 g g g 
+  | % 118
+  fis4 r8 fis fis fis 
+  | % 119
+  g4 r8 g g g 
+  | % 120
+  a4 r8 a a a 
+  | % 121
+  g4 r8 g g g 
+  | % 122
+  fis4 r r 
+  | % 123
+  d4 d d 
+  | % 124
+  ees ees ees 
+  | % 125
+  fis fis fis 
+  | % 126
+  d d d 
+  | % 127
+  ees a, a 
+  | % 128
+  d d d 
+  | % 129
+  ees ees ees 
+  | % 130
+  fis fis fis 
+  | % 131
+  d d d 
+  | % 132
+  ees d d 
+  | % 133
+  \partial 4 d
 }

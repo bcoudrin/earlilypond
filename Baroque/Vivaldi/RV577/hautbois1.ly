@@ -118,7 +118,7 @@ hautboisprimofirst = \relative c'' {
   d16 [e fis g a bes c d] g,8 d' bes g 
   | % 76
   R1*15
-  \partial 4 r4
+  r4
 }
 
 %% Largo non molto %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -127,7 +127,6 @@ hautboisprimosecond = \relative c {
   \time 3/4
   \key g \minor
   \clef treble
-  \mark \markup{Tacet}
   R2.*18
 }
 
@@ -274,5 +273,5 @@ hautboisprimothird = \relative c''' {
   | % 132
   ees d d 
   | % 133
-  \partial 4 d
+  d
 }

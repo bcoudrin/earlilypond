@@ -12,10 +12,13 @@
 
 % Default fonts
 \paper  {
-  myStaffSize = #20
   #(define fonts
-     (make-pango-font-tree "Times New Roman"
-                           "Nimbus Sans"
-                           "Luxi Mono"
-                           (/ myStaffSize 20)))
+    (set-global-fonts
+      #:music "scorlatti"
+      #:brace "scorlatti"
+      #:roman "Century Schoolbook L"
+      #:sans "Nimbus Sans"
+      #:typewriter "Luxi Mono"
+      #:factor (/ staff-height pt 20)
+  ))
 }

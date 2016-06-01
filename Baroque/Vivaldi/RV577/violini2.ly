@@ -77,7 +77,7 @@ violinosecundofirst = \relative c'' {
   d d d d bes bes bes bes 
   c c c c a4 r4
   R1*9
-  \partial 4 r4
+  r4
 }
 
 %% Largo non molto %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -217,5 +217,5 @@ violinosecundothird = \relative c''' {
   | % 132
   g8 c a4 a 
   | % 133
-  \partial 4 bes 
+  bes 
 }

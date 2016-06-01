@@ -99,7 +99,7 @@ fagottofirst = \relative c {
   fis (a g fis) g (c bes a) 
   bes (g fis g) d'4 d, 
   g fis g8 [bes,16 c d8 d,] 
-  \partial 4 g4 
+  g4 
 }
 
 %% Largo non molto %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -380,6 +380,6 @@ fagottothird = \relative c {
   | % 123
   g4 r r
   R2.*9
-  \partial 4 r4
+  r4
 }
 

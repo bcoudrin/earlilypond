@@ -69,7 +69,7 @@ violafirst = \relative c' {
   bes bes bes bes ees ees ees ees
   a, a a a d4 r
   R1*9
-  \partial 4 r4
+  r4
 }
 
 %% Largo non molto %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -157,5 +157,5 @@ violathird = \relative c {
   d d d
   g, g g
   c d d,
-  \partial 4 g
+  g
 }

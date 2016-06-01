@@ -10,9 +10,9 @@
 %%  To Public License, Version 2, as published by Sam Hocevar. See
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
-\version "2.16.0"
-
 \include "../../../include/format.ily"
+\include "../../../include/notation.ily"
+\include "../../../include/notes.ily"
 
 \header {
   tagline = \markup { "Copyright : " \char ##x00A9 " 2013-2016 Earlilypond, Benjamin Coudrin" }
@@ -20,38 +20,24 @@
   composerDate = "1678-1741"
   date = "ca 1720"
   title = "Concerto per l'Orchestra di Dresda"
-  subtitle = \markup \center-column { "in Sol minore" "RV 577"}
-  source = \markup \left-column {
+  subtitle = "in Sol minore"
+  catalogue = "RV 577"
+  editor = "Benjamin Coudrin"
+  sources = \markup \left-column {
     "Sources : "
      "[1] Concerto del Vivaldi per l'Orchestra di Dresda, Ms Foà vol.32 (cc. 339r-354r), Bi­blioteca Nazionale Universitaria, Torino. "
     \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
   }
 }
 
-#(set-default-paper-size "a4")
-#(set-global-staff-size 15)
-
 \paper {
+  bookTitleMarkup = \pieceBigTitleMarkupNoSource
   #(define page-breaking ly:minimal-breaking)
-  bookTitleMarkup = \markup \abs-fontsize #6 \column {
-    \vspace #1
-    \fill-line { \override #'(font-name . "Calluna") \fontsize #5 \fromproperty #'header:composer }
-    \fill-line { \override #'(font-name . "Calluna") \fontsize #2 \fromproperty #'header:composerDate }
-    \vspace #1
-    \fill-line { \override #'(font-name . "Calluna Bold") \fontsize #8 \fromproperty #'header:title }
-    \vspace #1
-    \fill-line { \override #'(font-name . "Calluna Bold") \fontsize #2 \fromproperty #'header:subtitle }
-    \vspace #1
-    \fill-line { \postscript #"-20 0 moveto 40 0 rlineto stroke" }
-    \vspace #1
-    \fill-line { \override #'(font-name . "Calluna") \fontsize #6 \fromproperty #'header:instrument }
-    \vspace #2
-    \fill-line { \override #'(font-name . "Calluna Light") \fontsize #-1 \fromproperty #'header:source }
-    \vspace #2    
-  }
-  %bookTitleMarkup = \pieceBigTitleMarkup
 }
-\markup\null
+
+\layout {
+  \layoutCommons
+}
 
 \include "violinoprincipale.ly"
 \include "flauto1.ly"
@@ -65,108 +51,510 @@
 \include "bassitutti.ly"
 
 controlfirst = {
-  \mark \markup \bold \large "Allegro"
-  s1*90 \partial 4 s4 \bar "|."
-  \mark \markup \fontsize #-2 \center-column {"DC sino" "al Segno" \musicglyph #"scripts.ufermata" }
+  \time 4/4
+  %\mark \markup \bold \large "Allegro"
+  s1*90 s4 \bar "|."
+  \mark \markup \center-column {"DC sino" "al Segno" \musicglyph #"scripts.ufermata" }
 }
 
 controlsecond = {
+  \time 3/4
   \mark \markup \bold \large "Largo non molto"
   \repeat volta 2 { R2.*8 }
   \repeat volta 2 { R2.*10}
 }
 
 controlthird = {
+  \time 3/4
   \mark \markup \bold \large "Allegro"
-  s2.*132 \partial 4 s4 \bar "|."
+  s2.*132 s4 \bar "|."
   \mark \markup \fontsize #-2 \center-column {"DC sino" "al Segno" \musicglyph #"scripts.ufermata" }
 }
 
-
-\score {
-  <<
-    \new Lyrics << \controlfirst >> 
-    \new Staff <<
-      \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "principale"}
-      \set Staff.shortInstrumentName = \markup\fontsize #-1 \center-column{"Vp"}
-      \violinoprincipalefirst >>
-    \new StaffGroup <<
-      \set StaffGroup.instrumentName = \markup\fontsize #-1 "Violini"
-      \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "V"
-      \new Staff << \violinoprimofirst >>
-      \new Staff << \violinosecundofirst >>
-    >>
-    \new StaffGroup <<
-      \set StaffGroup.instrumentName = \markup\fontsize #-1 "Hautbois"
-      \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "H"
-      \new Staff << \hautboisprimofirst >>
-      \new Staff << \hautboissecundofirst >>
-    >>
-    \new StaffGroup <<
-      \set StaffGroup.instrumentName = \markup\fontsize #-1 "Flauti"
-      \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "Fl"
-      \new Staff << \flautoprimofirst >>
-      \new Staff << \flautosecundofirst >>
-    >>
-    \new Staff <<
-      \set Staff.instrumentName = \markup\fontsize #-1 "Viola"
-      \set Staff.shortInstrumentName = \markup\fontsize #-1 "Va"
-      \violafirst >>
-    \new Staff <<
-      \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto"
-      \set Staff.shortInstrumentName = \markup\fontsize #-1 "Fg"
-      \fagottofirst >>
-    \new Staff <<
-      \set Staff.instrumentName = \markup\fontsize #-1 "Bassi tutti"
-      \set Staff.shortInstrumentName = \markup\fontsize #-1 "B"
-      \bassituttifirst >>
-  >>
-  \layout {\layoutCommonsWithEmptyStaves }
+% Front page
+\bookpart {
+  \header {
+    title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}
+  }
+  \paper {
+    bookTitleMarkup = \titlePageMarkup
+    print-page-number = ##f
+  }
+  \markup\null
 }
 
-\score {
-  <<
-    \new Lyrics << \controlsecond >> 
-    \new StaffGroup <<
-      \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "Solo ò" "Hautbois"} \violinoprincipalesecond >>
-      \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto" \fagottosecond >>
-    >>
-  >>
-  \layout {\layoutCommons }
+% Blank page
+\bookpart {
+  \paper {
+    bookTitleMarkup = \markup\null
+    print-page-number = ##f
+  }
+  \markup\null
 }
 
-\score {
-  <<
-    \new Lyrics << \controlthird >> 
-    \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "principale"} \violinoprincipalethird >>
-    \new StaffGroup <<
-      \set StaffGroup.instrumentName = \markup\fontsize #-1 "Violini"
-      \new Staff << \violinoprimothird >>
-      \new Staff << \violinosecundothird >>
+% Notes
+\bookpart {
+  \paper {
+    bookTitleMarkup = \bookNotePageMarkup
+    print-page-number = ##f
+  }
+  
+  \markup {
+    \column {
+      \vspace #5
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+      \vspace #1
+    }
+  }
+  
+  \markup \vspace #12
+  
+  \licenceText
+}
+
+% Blank page
+\bookpart {
+  \paper {
+    bookTitleMarkup = \markup\null
+    print-page-number = ##f
+  }
+  \markup\null
+}
+
+% Conductor
+\bookpart {
+  \markup \vspace #2
+
+  \score {
+    <<
+      \new Lyrics << \controlfirst >> 
+      \new Staff <<
+        \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "principale"}
+        \set Staff.shortInstrumentName = \markup\fontsize #-1 \center-column{"Vp"}
+        \violinoprincipalefirst >>
+      \new StaffGroup <<
+        \set StaffGroup.instrumentName = \markup\fontsize #-1 "Violini"
+        \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "V"
+        \new Staff << \violinoprimofirst >>
+        \new Staff << \violinosecundofirst >>
+      >>
+      \new StaffGroup <<
+        \set StaffGroup.instrumentName = \markup\fontsize #-1 "Hautbois"
+        \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "H"
+        \new Staff << \hautboisprimofirst >>
+        \new Staff << \hautboissecundofirst >>
+      >>
+      \new StaffGroup <<
+        \set StaffGroup.instrumentName = \markup\fontsize #-1 "Flauti"
+        \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "Fl"
+        \new Staff << \flautoprimofirst >>
+        \new Staff << \flautosecundofirst >>
+      >>
+      \new Staff <<
+        \set Staff.instrumentName = \markup\fontsize #-1 "Viola"
+        \set Staff.shortInstrumentName = \markup\fontsize #-1 "Va"
+        \violafirst >>
+      \new Staff <<
+        \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto"
+        \set Staff.shortInstrumentName = \markup\fontsize #-1 "Fg"
+        \fagottofirst >>
+      \new Staff <<
+        \set Staff.instrumentName = \markup\fontsize #-1 "Bassi tutti"
+        \set Staff.shortInstrumentName = \markup\fontsize #-1 "B"
+        \bassituttifirst >>
     >>
-    \new StaffGroup <<
-      \set StaffGroup.instrumentName = \markup\fontsize #-1 "Hautbois"
-      \new Staff << \hautboisprimothird >>
-      \new Staff << \hautboissecundothird >>
+    \layout {\layoutCommonsWithEmptyStaves}
+  }
+
+  \score {
+    <<
+      \new Lyrics << \controlsecond >> 
+      \new StaffGroup <<
+        \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "Solo ò" "Hautbois"} \violinoprincipalesecond >>
+        \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto" \fagottosecond >>
+      >>
     >>
-    \new StaffGroup <<
-      \set StaffGroup.instrumentName = \markup\fontsize #-1 "Flauti"
-      \new Staff << \flautoprimothird >>
-      \new Staff << \flautosecundothird >>
+    \layout {\layoutCommons }
+  }
+  
+  \score {
+    <<
+      \new Lyrics << \controlthird >> 
+      \new Staff <<
+        \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "principale"}
+        \set Staff.shortInstrumentName = \markup\fontsize #-1 \center-column{"Vp"}
+        \violinoprincipalethird >>
+      \new StaffGroup <<
+        \set StaffGroup.instrumentName = \markup\fontsize #-1 "Violini"
+        \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "V"
+        \new Staff << \violinoprimothird >>
+        \new Staff << \violinosecundothird >>
+      >>
+      \new StaffGroup <<
+        \set StaffGroup.instrumentName = \markup\fontsize #-1 "Hautbois"
+        \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "H"
+        \new Staff << \hautboisprimothird >>
+        \new Staff << \hautboissecundothird >>
+      >>
+      \new StaffGroup <<
+        \set StaffGroup.instrumentName = \markup\fontsize #-1 "Flauti"
+        \set StaffGroup.shortInstrumentName = \markup\fontsize #-1 "Fl"
+        \new Staff << \flautoprimothird >>
+        \new Staff << \flautosecundothird >>
+      >>
+      \new Staff <<
+        \set Staff.instrumentName = \markup\fontsize #-1 "Viola"
+        \set Staff.shortInstrumentName = \markup\fontsize #-1 "Va"
+        \violathird >>
+      \new Staff <<
+        \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto"
+        \set Staff.shortInstrumentName = \markup\fontsize #-1 "Fg"
+        \fagottothird >>
+      \new Staff <<
+        \set Staff.instrumentName = \markup\fontsize #-1 "Bassi tutti"
+        \set Staff.shortInstrumentName = \markup\fontsize #-1 "B"
+        \bassituttithird >>
     >>
-    \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Viola" \violathird >>
-    \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Fagotto" \fagottothird >>
-    \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Bassi tutti" \bassituttithird >>
-  >>
-  \layout {\layoutCommonsWithEmptyStaves }
+    \layout {\layoutCommonsWithEmptyStaves }
+  }
+}
+
+% Violino principale
+\book {
+  \bookOutputSuffix "ViolinoPrincipale"
+  \header {
+    instrument = "Violino Principale"
+  }
+  
+  \bookpart {
+    \header {
+      title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}
+    }
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {
+    \score { << \new Staff << \controlfirst  >> \new Staff << \violinoprincipalefirst >> >> \layout{\layoutCommons}}
+    \markup \vspace #1
+    \score { << \new Staff << \controlsecond >> \new Staff << 
+      \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "Solo ò" "Hautbois"}
+      \violinoprincipalesecond >> >>
+      \layout{\layoutCommons} }
+    \markup \vspace #1
+    \score { <<	\new Staff << \controlthird  >> \new Staff << \violinoprincipalethird >> >> \layout{\layoutCommons}}
+    \markup \vspace #1
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+      \vspace #1
+    }
+  }
+}
+
+% Violino primo
+\book {
+  \bookOutputSuffix "Violino1"
+  \header { instrument = "Violino 1" }
+  \bookpart {
+    \header {title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}}
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {  
+    \score { << \new Staff << \controlfirst  >> \new Staff << \violinoprimofirst  >> >> \layout{\layoutCommons} }
+  }
+  \bookpart {
+    \paper {bookTitleMarkup = \markup\null}
+    \markup \vspace #2
+    \markup \line {\hspace #10 \fontsize #1 {\bold "Largo non molto" " : tacet"}}
+    \markup \vspace #1
+    \score { << \new Staff << \controlthird  >> \new Staff << \violinoprimothird  >> >> \layout{\layoutCommons #(layout-set-staff-size 17)} }
+    \markup \vspace #1
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+      \vspace #1
+    }
+  }
+}
+
+% Violino secundo
+\book {
+  \bookOutputSuffix "Violino2"
+  \header { instrument = "Violino 2" }
+  \bookpart {
+    \header {title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}}
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {  
+    \score { << \new Staff << \controlfirst  >> \new Staff << \violinosecundofirst  >> >> \layout{\layoutCommons} }
+  }
+  \bookpart {
+    \paper {bookTitleMarkup = \markup\null}
+    \markup \vspace #2
+    \markup \line {\hspace #10 \fontsize #1 {\bold "Largo non molto" " : tacet"}}
+    \markup \vspace #1
+    \score { << \new Staff << \controlthird  >> \new Staff << \violinosecundothird  >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+      \vspace #1
+    }
+  }
+}
+
+% Hautbois primo
+\book {
+  \bookOutputSuffix "Hautbois1"
+  \header { instrument = "Hautbois 1" }
+  \bookpart {
+    \header {title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}}
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {
+    \score { << \new Staff << \controlfirst  >> \new Staff << \hautboisprimofirst  >> >> \layout{\layoutCommons} }
+  }
+  \bookpart {
+    \paper {bookTitleMarkup = \markup\null}
+    \markup \vspace #2
+    \score { << \new Staff << \controlsecond >> \new Staff <<
+      \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "Solo ò" "Hautbois"}
+      \violinoprincipalesecond >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \score { << \new Staff << \controlthird  >> \new Staff << \hautboisprimothird  >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+      \vspace #1
+    }
+  }
+}
+
+% Hautbois secundo
+\book {
+  \bookOutputSuffix "Hautbois2"
+  \header { instrument = "Hautbois 2" }
+  \bookpart {
+    \header {title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}}
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {  
+    \score { << \new Staff << \controlfirst  >> \new Staff << \hautboissecundofirst  >> >> \layout{\layoutCommons} }
+  }
+  \bookpart {
+    \paper {bookTitleMarkup = \markup\null}
+    \markup \vspace #2
+    \markup \line {\hspace #10 \fontsize #1 {\bold "Largo non molto" " : tacet"}}
+    \markup \vspace #1
+    \score { << \new Staff << \controlthird  >> \new Staff << \hautboissecundothird  >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+      \vspace #1
+    }
+  }
+}
+
+% Flauto primo
+\book {
+  \bookOutputSuffix "Flauto1"
+  \header { instrument = "Flauto 1" }
+  \bookpart {
+    \header {title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}}
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {
+    \score { << \new Staff << \controlfirst  >> \new Staff << \flautoprimofirst  >> >> \layout{\layoutCommons} }
+    \markup \vspace #2
+    \markup \line {\hspace #10 \fontsize #1 {\bold "Largo non molto" " : tacet"}}
+    \markup \vspace #1
+    \score { << \new Staff << \controlthird  >> \new Staff << \flautoprimothird  >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+      \vspace #1
+    }
+  }
+}
+
+% Flauto secundo
+\book {
+  \bookOutputSuffix "Flauto2"
+  \header { instrument = "Flauto 2" }
+  \bookpart {
+    \header {title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}}
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {
+    \score { << \new Staff << \controlfirst  >> \new Staff << \flautosecundofirst  >> >> \layout{\layoutCommons} }
+  }
+  \bookpart {
+    \paper {bookTitleMarkup = \markup\null}
+    \markup \vspace #2
+    \markup \line {\hspace #10 \fontsize #1 {\bold "Largo non molto" " : tacet"}}
+    \markup \vspace #1
+    \score { << \new Staff << \controlthird  >> \new Staff << \flautosecundothird  >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+      \vspace #1
+    }
+  }
 }
 
 % Viola
 \book {
   \bookOutputSuffix "Viola"
   \header { instrument = "Viola" }
-  
-  \score { << \new Staff << \controlfirst >> \new Staff << \violafirst >> >> \layout{\layoutCommons #(layout-set-staff-size 17)} }
-  \score { << \new Staff << \controlsecond >> >> \layout{\layoutCommons #(layout-set-staff-size 17)} }
-  \score { << \new Staff << \controlthird >> \new Staff << \violathird >> >> \layout{\layoutCommons #(layout-set-staff-size 17)} }
+  \bookpart {
+    \header {title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}}
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {
+    \score { << \new Staff << \controlfirst >> \new Staff << \violafirst >> >> \layout{\layoutCommons #(layout-set-staff-size 16)} }
+    \markup \vspace #1
+    \markup \line {\hspace #10 \fontsize #1 {\bold "Largo non molto" " : tacet"}}
+    \markup \vspace #1
+    \score { << \new Staff << \controlthird >> \new Staff << \violathird >> >> \layout{\layoutCommons #(layout-set-staff-size 16)} }
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+    }
+  }
+}
+
+% Fagotto
+\book {
+  \bookOutputSuffix "Fagotto"
+  \header { instrument = "Fagotto" }
+  \bookpart {
+    \header {title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}}
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {
+    \score { << \new Staff << \controlfirst  >> \new Staff << \fagottofirst  >> >> \layout{\layoutCommons} }
+    \markup \vspace #2
+    \score { << \new Staff << \controlsecond >> \new Staff << \fagottosecond >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \score { << \new Staff << \controlthird  >> \new Staff << \fagottothird  >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+      \vspace #1
+    }
+  }
+}
+
+% Tiorba
+\book {
+  \bookOutputSuffix "Tiorba"
+  \header { instrument = "Tiorba" }
+  \bookpart {
+    \header {title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}}
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {
+    \score { << \new Staff << \controlfirst  >> \new Staff << \fagottofirst  >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \score {
+      <<
+        \new Lyrics << \controlsecond >> 
+        \new StaffGroup <<
+          \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 \center-column{"Violino" "Solo ò" "Hautbois"} \violinoprincipalesecond >>
+          \new Staff << \set Staff.instrumentName = \markup\fontsize #-1 "Tiorba" \fagottosecond >>
+        >>
+      >>
+      \layout {\layoutCommons }
+    }
+    \markup \vspace #1
+    \score { << \new Staff << \controlthird  >> \new Staff << \fagottothird  >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+      \vspace #1
+    }
+  }
+}
+
+% Bassi tutti
+\book {
+  \bookOutputSuffix "BassiTutti"
+  \header { instrument = "Bassi Tutti" }  
+  \bookpart {
+    \header {title = \markup \fontsize #-2 \center-column \caps {"Concerto" "per l'Orchestra di Dresda"}}
+    \paper {
+      bookTitleMarkup = \partTitlePageMarkup
+      print-page-number = ##f
+    }
+    \markup\null
+  }
+  \bookpart {
+    \score { << \new Staff << \controlfirst  >> \new Staff << \bassituttifirst  >> >> \layout{\layoutCommons} }
+    \markup \line {\hspace #10 \fontsize #2 {\bold "Largo non molto" " : tacet"}}
+    \markup \vspace #1
+    \score { << \new Staff << \controlthird  >> \new Staff << \bassituttithird  >> >> \layout{\layoutCommons} }
+    \markup \vspace #1
+    \markup \fontsize #-1 \column {
+      "Sources : "
+      \wordwrap-lines {"[1] " \italic "Concerto del Vivaldi per l'Orchestra di Dresda," "Ms Foà vol.32 (cc. 339r-354r)" "Bi­blioteca Nazionale Universitaria, Torino."}
+      \with-url #"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html" {"http://www.internetculturale.it/opencms/opencms/it/collezioni/collezione_0042.html"}
+    }
+  }
 }

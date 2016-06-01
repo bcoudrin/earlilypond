@@ -115,7 +115,7 @@ flautosecundofirst = \relative c''' {
   fis ees4 d8 g d bes g 
   | % 76
   R1*15
-  \partial 4 r4
+  r4
 }
 
 %% Largo non molto %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -273,5 +273,5 @@ flautosecundothird = \relative c'' {
   | % 132
   g8 c a4 a 
   | % 133
-  \partial 4 bes 
+  bes 
 }

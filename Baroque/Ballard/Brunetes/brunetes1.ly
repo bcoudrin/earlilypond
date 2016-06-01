@@ -25,7 +25,7 @@
     \caps{"avec les doubles et la basse-continue;"}
     \caps{"melees de chansons a danser"}
   } }
-  opus = \markup {\caps {"Tome Premier"}}
+  catalogue = \markup {\caps {"Tome Premier"}}
   editor = "Benjamin Coudrin"
   %image = \markup { \epsfile #X #40 #"cover.eps" }
   image = \markup { \vspace #6 }

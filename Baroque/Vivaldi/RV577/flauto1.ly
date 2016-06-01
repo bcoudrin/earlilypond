@@ -120,7 +120,7 @@ flautoprimofirst = \relative c''' {
   bes a4 g fis8 g d bes g 
   | % 76
   R1*15
-  \partial 4 r4
+  r4
 }
 
 %% Largo non molto %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -278,5 +278,5 @@ flautoprimothird = \relative c''' {
   | % 132
   ees d d 
   | % 133
-  \partial 4 d 
+  d 
 }

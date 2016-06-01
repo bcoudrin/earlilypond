@@ -81,7 +81,7 @@ bassituttifirst = \relative c {
   d d d d 
   d d d r4
   R1*6
-  \partial 4 r4
+  r4
 }
 
 bassituttisecond = \relative c {
@@ -312,5 +312,5 @@ bassituttithird = \relative c {
   | % 123
   g4 r r
   R2.*9
-  \partial 4 r4
+  r4
 }

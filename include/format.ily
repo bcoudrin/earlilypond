@@ -10,18 +10,16 @@
 %%  To Public License, Version 2, as published by Sam Hocevar. See
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
-% Common includes
-#(ly:set-option 'relative-includes #t)
-\include "fonts.ily"
-\include "titles.ily"
+\version "2.19.42"
 
 % Paper settings
 #(set-default-paper-size "a4")
+#(set-global-staff-size 17)
 \paper {
   line-width    = 188\mm
   left-margin   = 10\mm
   top-margin    = 10\mm
-  bottom-margin = 20\mm
+  bottom-margin = 10\mm
   ragged-last-bottom = ##t 
   ragged-bottom = ##f
   annotate-spacing = ##f
@@ -30,7 +28,6 @@
 
 % Layout commons
 layoutCommonsWithEmptyStaves = \layout {
-  #(layout-set-staff-size 17)
   \context {
     \Score
     \override SpacingSpanner #'uniform-stretching = ##t
@@ -79,3 +76,8 @@ footnoteLayout = \layout {
     \override BarNumber.break-visibility = #'#(#f #f #t)
   }
 }
+
+% Common includes
+#(ly:set-option 'relative-includes #t)
+\include "fonts.ily"
+\include "titles.ily"

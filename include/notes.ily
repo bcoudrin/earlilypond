@@ -16,6 +16,44 @@
 %% Licence notice
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+licenceText = \markup \fill-line {
+  \hspace #1
+  \column {
+    \override #'(line-width . 55)
+    \justify \fontsize #-1 {
+      La présente édition est libre. Elle est distribuée sans aucune garantie, dans les limites permises par la loi. Vous pouvez
+      en faire usage, la redistribuer et/ou la modifier selon les termes de la licence Do What The Fuck You Want To Public Licence,
+      Version 2, telle que publiée par Sam Hocevar. Voir \with-url #"http://sam.zoy.org/wtfpl/COPYING" "http://sam.zoy.org/wtfpl/COPYING"
+      pour plus de détails.
+    }
+    \vspace #1
+    \override #'(line-width . 55)
+    \justify \fontsize #-1 {
+      Cette édition fait partie du projet Earlilypond. Les fichiers sources du projet et de cette édition sont
+      accessibles, distribuables et modifiables selon les termes de la Do What The Fuck You Want To Public Licence, Version 2, depuis la page web
+      du projet \with-url #"https://github.com/bcoudrin/earlilypond" "https://github.com/bcoudrin/earlilypond"
+    }
+  }
+  \hspace #1
+  \column {
+    \override #'(line-width . 55)
+    \justify \fontsize #-1 {
+      This edition is free content. It comes without any warrant to the extent permitted by applicable law. You can
+    use it, redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public Licence, Version 2,
+    as published by Sam Hocevar. See \with-url #"http://sam.zoy.org/wtfpl/COPYING" "http://sam.zoy.org/wtfpl/COPYING"
+    for more details
+    }
+    \vspace #1
+    \override #'(line-width . 55)
+    \justify \fontsize #-1 {
+      This work is part of the Earlilypond project. Source files of the project and of this edition can be found, redistributed and
+    modified according to the Do What The Fuck You Want To Public Licence, Version 2, from the web page of the project
+    \with-url #"https://github.com/bcoudrin/earlilypond" "https://github.com/bcoudrin/earlilypond"
+    }
+  }
+  \hspace #1
+}
+    
 frenchLicence = \markup \column {
   \vspace #10
   \justify \fontsize #-2 {
@@ -28,7 +66,7 @@ frenchLicence = \markup \column {
   \justify \fontsize #-2 {
     Cette édition fait partie du projet Earlilypond. Les fichiers sources du projet et de cette édition sont
     accessibles, distribuables et modifiables selon les termes de la Do What The Fuck You Want To Public Licence, Version 2, depuis la page web
-    du projet \with-url #"https://code.google.com/p/earlilypond/" "https://code.google.com/p/earlilypond/"
+    du projet \with-url #"https://github.com/bcoudrin/earlilypond" "https://github.com/bcoudrin/earlilypond"
   }
 }
 
@@ -44,6 +82,6 @@ englishLicence = \markup \column {
   \justify \fontsize #-2 {
     This work is part of the Earlilypond project. Source files of the project and of this edition can be found, redistributed and
     modified according to the Do What The Fuck You Want To Public Licence, Version 2, from the web page of the project
-    \with-url #"https://code.google.com/p/earlilypond/" "https://code.google.com/p/earlilypond/"
+    \with-url #"https://github.com/bcoudrin/earlilypond" "https://github.com/bcoudrin/earlilypond"
   }
 }

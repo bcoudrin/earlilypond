@@ -87,7 +87,7 @@ violinoprimofirst = \relative c''' {
   f f f f g g g g 
   ees ees ees ees fis,4 r4
   R1*9
-  \partial 4 r4
+  r4
 }
 
 %% Largo non molto %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -278,5 +278,5 @@ violinoprimothird = \relative c''' {
   | % 132
   ees d d 
   | % 133
-  \partial 4 d 
+  d 
 }

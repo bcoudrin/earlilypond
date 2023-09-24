@@ -19,7 +19,7 @@ AAahSopUn = \relative c'' {
     \partial 2
     g4^\markup{\italic "Sujet"} fis
     g4. a8 bes4 (a8) bes
-    a4 a bes8 a be
+    a4 a bes8 a bes c
   }
   \repeat volta 2 {
   }

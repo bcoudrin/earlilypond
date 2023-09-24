@@ -16,7 +16,7 @@
     (set-global-fonts
       #:music "scorlatti"
       #:brace "scorlatti"
-      #:roman "Century Schoolbook L"
+      #:roman "Century Schoolbook"
       #:sans "Nimbus Sans"
       #:typewriter "Luxi Mono"
       #:factor (/ staff-height pt 20)

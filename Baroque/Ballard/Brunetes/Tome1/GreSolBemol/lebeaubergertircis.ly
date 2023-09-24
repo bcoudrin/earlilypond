@@ -229,7 +229,7 @@ AAaaBass = \relative c {
 AAaaScore = \score {
   \new StaffGroup  <<
     \new Voice = "Voice" <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \AAaaVoice
     >>
@@ -239,7 +239,7 @@ AAaaScore = \score {
       \AAaaLyricsTrois
     }
     \new Staff \with { \consists "Volta_engraver" } <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode {
         \AAaaFigures

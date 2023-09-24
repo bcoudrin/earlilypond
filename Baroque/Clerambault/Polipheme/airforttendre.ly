@@ -306,21 +306,7 @@ Bbasse = {
     d'2 d, c
     bes a4. g8 fis2
     g4. c,8 d1
-    g1 #(make-music
-         'SequentialMusic
-         'elements
-         (list (make-music
-                'NoteEvent
-                'articulations
-                (list (make-music
-                       'SlurEvent
-                       START))
-                'duration
-                (ly:make-duration 1 0 1)
-                'pitch
-                (ly:make-pitch 0 4 0))))
-    %\displayMusic {g'2}
-    %\bar "||" \mark \markup \normalsize { \musicglyph  #"scripts.segno" }
+    g1 g'2
   }
   \bar "|."
 }

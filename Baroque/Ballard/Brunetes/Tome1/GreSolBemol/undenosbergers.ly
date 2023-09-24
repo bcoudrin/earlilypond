@@ -92,7 +92,7 @@ AAagBass = \relative c {
 AAagScore = \score {
   \new StaffGroup  <<
     \new Voice = "Voice" <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \AAagVoice
     >>
@@ -100,7 +100,7 @@ AAagScore = \score {
       \AAagLyrics
     }
     \new Staff \with { \consists "Volta_engraver" } <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode {
         \AAagFigures

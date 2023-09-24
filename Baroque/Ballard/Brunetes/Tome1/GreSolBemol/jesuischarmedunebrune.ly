@@ -167,7 +167,7 @@ AAacBass = \relative c {
 AAacScore = \score {
   \new StaffGroup  <<
     \new Voice = "Voice" <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \AAacVoice
     >>
@@ -176,7 +176,7 @@ AAacScore = \score {
       \AAacLyricsDeux
     }
     \new Staff \with { \consists "Volta_engraver" } <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode {
         \AAacFigures

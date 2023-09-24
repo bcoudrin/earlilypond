@@ -10,7 +10,7 @@
 %%  To Public License, Version 2, as published by Sam Hocevar. See
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
-\version "2.16.2"
+\version "2.24.2"
 \include "../../include/format.ily"
 \include "../../include/notation.ily"
 
@@ -43,26 +43,27 @@
 \layout {
   \context {
     \Score
-    \override SpacingSpanner #'uniform-stretching = ##t
-    \override Stem #'neutral-direction = #1
+    \override SpacingSpanner.uniform-stretching = ##t
+    \override Stem.neutral-direction = #1
   }
   \context {
     \Voice
-    \override TupletNumber #'stencil = ##f 
-    \override TupletBracket #'bracket-visibility = ##f 
+    \override TupletNumber.stencil = ##f 
+    \override TupletBracket.bracket-visibility = ##f 
   }
   \context {
-    \RemoveEmptyStaffContext
-    \override VerticalAxisGroup #'remove-first = ##t 
+    \Staff
+    \RemoveEmptyStaves
+    \override VerticalAxisGroup.remove-first = ##t 
   }
   \context { 
     \Staff
-    \override BassFigure #'font-size = #-1
+    \override BassFigure.font-size = #-1
   } 
   \context { 
     \Lyrics
-    \override LyricText #'font-size = #0
-    \override LyricText #'font-shape = #'italic
+    \override LyricText.font-size = #0
+    \override LyricText.font-shape = #'italic
   } 
 }
 
@@ -766,12 +767,12 @@ basse = \relative c' {
 
 \score {
   \new StaffGroup  <<
-    \new Staff = "fluteun" <<\override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \fluteun >>
-    \new Staff = "flutedeux" <<\override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \flutedeux >>
-    \new Voice = "voix" << \override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \voice >>
+    \new Staff = "fluteun" <<\override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \fluteun >>
+    \new Staff = "flutedeux" <<\override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \flutedeux >>
+    \new Voice = "voix" << \override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \voice >>
     \new Lyrics \lyricsto voix { \voicelyr }
     \new Staff <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode { \bassefig }
       \basse

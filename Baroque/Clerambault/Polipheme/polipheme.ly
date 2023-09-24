@@ -10,7 +10,7 @@
 %%  To Public License, Version 2, as published by Sam Hocevar. See
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
-\version "2.16.0"
+\version "2.24.2"
 
 \header {
   tagline = \markup { "Copyright : " \char ##x00A9 " 2013 Earlilypond, Benjamin Coudrin" }
@@ -55,25 +55,26 @@ clefDessus = \clef french
 \layout {
   \context {
     \Score
-    \override SpacingSpanner #'uniform-stretching = ##t
-    \override Stem #'neutral-direction = #1
+    \override SpacingSpanner.uniform-stretching = ##t
+    \override Stem.neutral-direction = #1
   }
   \context {
     \Voice
-    \override TupletNumber #'stencil = ##f 
-    \override TupletBracket #'bracket-visibility = ##f 
+    \override TupletNumber.stencil = ##f 
+    \override TupletBracket.bracket-visibility = ##f 
   }
   \context {
-    \RemoveEmptyStaffContext
-    \override VerticalAxisGroup #'remove-first = ##t 
+    \Staff
+    \RemoveEmptyStaves
+    \override VerticalAxisGroup.remove-first = ##t 
   }
   \context { 
     \Staff
-    \override BassFigure #'font-size = #-1
+    \override BassFigure.font-size = #-1
   } 
   \context { 
     \Lyrics
-    \override LyricText #'font-size = #0
+    \override LyricText.font-size = #0
   } 
 }
 
@@ -83,10 +84,10 @@ clefDessus = \clef french
 \include "recitatif1.ly"
 \score {
   \new StaffGroup  <<
-    \new Voice = "baryton" << \override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Abaryton >>
+    \new Voice = "baryton" << \override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Abaryton >>
     \new Lyrics \lyricsto baryton { \Alyrbar }
     \new Staff <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode { \Abassefig }
       \Abasse
@@ -98,11 +99,11 @@ clefDessus = \clef french
 \include "airforttendre.ly"
 \score {
   \new StaffGroup  <<
-    \new Voice = "dessus" <<\override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Bdessus >>
-    \new Voice = "baryton" << \override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Bbaryton >>
+    \new Voice = "dessus" <<\override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Bdessus >>
+    \new Voice = "baryton" << \override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Bbaryton >>
     \new Lyrics \lyricsto baryton { \Blyrbar }
     \new Staff <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode { \Bbassefig }
       \Bbasse
@@ -116,10 +117,10 @@ clefDessus = \clef french
 \include "recitatif2.ly"
 \score {
   \new StaffGroup  <<
-    \new Voice = "baryton" << \override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Cbaryton >>
+    \new Voice = "baryton" << \override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Cbaryton >>
     \new Lyrics \lyricsto baryton { \Clyrbar }
     \new Staff <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode { \Cbassefig }
       \Cbasse
@@ -131,11 +132,11 @@ clefDessus = \clef french
 \include "vengezmoy.ly"
 \score {
   \new StaffGroup  <<
-    \new Voice = "dessus" <<\override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Ddessus >>
-    \new Voice = "baryton" << \override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Dbaryton >>
+    \new Voice = "dessus" <<\override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Ddessus >>
+    \new Voice = "baryton" << \override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Dbaryton >>
     \new Lyrics \lyricsto baryton { \Dlyrbar }
     \new Staff <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode { \Dbassefig }
       \Dbasse
@@ -149,10 +150,10 @@ clefDessus = \clef french
 \include "recitatif3.ly"
 \score {
   \new StaffGroup  <<
-    \new Voice = "baryton" << \override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Ebaryton >>
+    \new Voice = "baryton" << \override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Ebaryton >>
     \new Lyrics \lyricsto baryton { \Elyrbar }
     \new Staff <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode { \Ebassefig }
       \Ebasse
@@ -161,11 +162,11 @@ clefDessus = \clef french
   \layout {
     \context {
       \Staff
-      \override BassFigure #'font-size = #-1
+      \override BassFigure.font-size = #-1
     }
     \context {
       \Lyrics
-      \override LyricText #'font-size = #-1
+      \override LyricText.font-size = #-1
     }
   }
 }
@@ -174,14 +175,14 @@ clefDessus = \clef french
 \include "airgracieusement.ly"
 \score {
   \new StaffGroup  <<
-    \new Voice = "dessus" <<\override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Fdessus >>
+    \new Voice = "dessus" <<\override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Fdessus >>
     \new Lyrics \lyricsto dessus { \Flyrdes }
-    \new Voice = "baryton" << \override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Fbaryton >>
+    \new Voice = "baryton" << \override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Fbaryton >>
     \new Lyrics \lyricsto baryton {
       \Flyrbar
     }
     \new Staff <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode { \Fbassefig }
       \Fbasse
@@ -190,11 +191,11 @@ clefDessus = \clef french
   \layout {
     \context {
       \Staff
-      \override BassFigure #'font-size = #-2
+      \override BassFigure.font-size = #-2
     }
     \context {
       \Lyrics
-      \override LyricText #'font-size = #-1
+      \override LyricText.font-size = #-1
     }
   }
 }

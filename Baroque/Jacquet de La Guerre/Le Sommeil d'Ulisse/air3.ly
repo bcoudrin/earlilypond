@@ -10,7 +10,7 @@
 %%  To Public License, Version 2, as published by Sam Hocevar. See
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
-\version "2.14.2"
+\version "2.24.2"
 
 #(set-default-paper-size "a4")
 #(set-global-staff-size 15)
@@ -29,8 +29,9 @@
 
 \layout {
   \context {
-    \RemoveEmptyStaffContext
-    \override VerticalAxisGroup #'remove-first = ##t 
+    \Staff
+    \RemoveEmptyStaves
+    \override VerticalAxisGroup.remove-first = ##t 
   }
 }
 
@@ -417,11 +418,11 @@ basse = {
 %% CONDUCTEUR     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \score {
   \new StaffGroup  <<
-    \new Voice = "vdeux" <<\override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \voixdeux >>
-    \new Voice = "vun" <<\override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \voixun >>
+    \new Voice = "vdeux" <<\override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \voixdeux >>
+    \new Voice = "vun" <<\override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \voixun >>
     \new Lyrics \lyricsto vun { \lyrun }
     \new Staff <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode { \bassefig }
       \basse

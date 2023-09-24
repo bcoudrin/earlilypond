@@ -30,37 +30,38 @@
 layoutCommonsWithEmptyStaves = \layout {
   \context {
     \Score
-    \override SpacingSpanner #'uniform-stretching = ##t
-    \override Stem #'neutral-direction = #1
-    \override FootnoteItem #'annotation-line = ##f
+    \override SpacingSpanner.uniform-stretching = ##t
+    \override Stem.neutral-direction = #1
+    \override FootnoteItem.annotation-line = ##f
   }
   \context {
     \Voice
-    \override TupletNumber #'stencil = ##f 
-    \override TupletBracket #'bracket-visibility = ##f 
+    \override TupletNumber.stencil = ##f 
+    \override TupletBracket.bracket-visibility = ##f 
   }
   \context { 
     \Staff
-    \override BassFigure #'font-size = #-1
+    \override BassFigure.font-size = #-1
   } 
   \context { 
     \Lyrics
-    \override LyricText #'font-size = #0
-    \override LyricText #'font-shape = #'italic
+    \override LyricText.font-size = #0
+    \override LyricText.font-shape = #'italic
   } 
 }
 
 layoutCommons = \layout {
   \layoutCommonsWithEmptyStaves
   \context {
-    \RemoveEmptyStaffContext
-    \override VerticalAxisGroup #'remove-first = ##t 
+    \Staff
+    \RemoveEmptyStaves
+    \override VerticalAxisGroup.remove-first = ##t 
   }
 }
 
 % notes
 footnoteSize = {
-  \override Score.StaffSymbol #'staff-space = #(magstep -3)
+  \override Score.StaffSymbol.staff-space = #(magstep -3)
   \set Score . fontSize = #-3
   \override BassFigure.font-size = #-1
 }
@@ -69,7 +70,7 @@ footnoteLayout = \layout {
   indent = 0
   ragged-right = ##t
   \context { \Staff \remove "Time_signature_engraver" }
-  \context { \Voice \override Script #'avoid-slur = #'outside }
+  \context { \Voice \override Script.avoid-slur = #'outside }
   \context {
     \Score
     \override StaffGrouper.staff-staff-spacing.basic-distance = #1

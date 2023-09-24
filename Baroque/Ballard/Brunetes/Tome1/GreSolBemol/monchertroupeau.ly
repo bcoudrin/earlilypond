@@ -102,7 +102,7 @@ AAadLyrics = \lyricmode {
 AAadScore = \score {
   \new StaffGroup  <<
     \new Voice = "SopUn" <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \AAadSopUn
     >>
@@ -110,7 +110,7 @@ AAadScore = \score {
       \AAadLyrics
     }
     \new Voice = "SopDeux" <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \AAadSopDeux
     >>
@@ -118,7 +118,7 @@ AAadScore = \score {
       \AAadLyrics
     }
     \new Voice = "Basse" <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \AAadBass
     >>

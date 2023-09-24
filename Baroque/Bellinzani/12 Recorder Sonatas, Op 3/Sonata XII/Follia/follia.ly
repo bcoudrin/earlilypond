@@ -10,7 +10,7 @@
 %%  To Public License, Version 2, as published by Sam Hocevar. See
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
-\version "2.12.3"
+\version "2.24.2"
 
 \paper {
   #(set-paper-size "a4")
@@ -68,9 +68,9 @@ altClef = {\clef tenor}
       \new FiguredBass \figuremode {
         \set figuredBassAlterationDirection = #LEFT
         \set figuredBassPlusDirection = #LEFT
-        \override VerticalAxisGroup #'minimum-Y-extent = #'()
-        \override BassFigureAlignment #'stacking-dir = #UP
-        \override FiguredBass.BassFigure #'font-size = #-2
+        \override VerticalAxisGroup.minimum-Y-extent = #'()
+        \override BassFigureAlignment.stacking-dir = #UP
+        \override FiguredBass.BassFigure.font-size = #-2
         \include "primo_continuo.ly"
         \include "secondo_continuo.ly"
         \include "terzo_continuo.ly"

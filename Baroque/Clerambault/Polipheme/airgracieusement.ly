@@ -16,7 +16,7 @@ Fdessus = {
   \ter
   \key g \minor
   \tempo "Air"
-  \override Voice.TupletNumber #'stencil = ##t
+  \override Voice.TupletNumber.stencil = ##t
   \relative c'' {
     bes4_\markup{\italic Gracieusement} c d
     g,2 r4 c8 [(d) ees (d) c (bes)]
@@ -324,7 +324,7 @@ Fbasse = {
   \clef bass
   \ter
   \key g \minor
-  \override Voice.TupletNumber #'stencil = ##t
+  \override Voice.TupletNumber.stencil = ##t
   \relative c {
     bes2 r4
     ees4 f g

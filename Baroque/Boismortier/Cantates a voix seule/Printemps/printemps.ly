@@ -10,7 +10,7 @@
 %%  To Public License, Version 2, as published by Sam Hocevar. See
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
-\version "2.16.2"
+\version "2.24.2"
 \include "../../../../include/format.ily"
 \include "../../../../include/notation.ily"
 
@@ -41,10 +41,10 @@
 \include "recitatif1.ly"
 \score {
   \new StaffGroup  <<
-    \new Voice = "voix" << \override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Avoice >>
+    \new Voice = "voix" << \override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Avoice >>
     \new Lyrics \lyricsto voix { \Alyrics }
     \new Staff <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode { \Abassefig }
       \Abasse
@@ -56,11 +56,11 @@
 \include "airloure.ly"
 \score {
   \new StaffGroup  <<
-    \new Voice = "dessus" <<\override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Bdessus >>
-    \new Voice = "voix" << \override Staff.BarLine #'allow-span-bar = ##f #(set-accidental-style 'forget) \Bvoice >>
+    \new Voice = "dessus" <<\override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Bdessus >>
+    \new Voice = "voix" << \override Staff.BarLine.allow-span-bar = ##f #(set-accidental-style 'forget) \Bvoice >>
     \new Lyrics \lyricsto voix { \Blyrics }
     \new Staff <<
-      \override Staff.BarLine #'allow-span-bar = ##f
+      \override Staff.BarLine.allow-span-bar = ##f
       #(set-accidental-style 'forget)
       \figuremode { \Bbassefig }
       \Bbasse

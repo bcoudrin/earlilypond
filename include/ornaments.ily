@@ -17,8 +17,8 @@
 vcoul =
 #(define-music-function (parser location music) (ly:music?) 
    #{ \once \set fingeringOrientations = #'(left) 
-      \once \override Fingering #'padding = #0.2
-      \once \override Fingering #'Y-offset =
+      \once \override Fingering.padding = #0.2
+      \once \override Fingering.Y-offset =
       #(lambda (grob)
          (let 
           ((s-pos (ly:grob-staff-position grob)))
@@ -55,8 +55,8 @@ vmartel =
 vscoul =
 #(define-music-function (parser location music) (ly:music?) 
    #{ \once \set fingeringOrientations = #'(left) 
-      \once \override Fingering #'padding = #0.2
-      \once \override Fingering #'Y-offset =
+      \once \override Fingering.padding = #0.2
+      \once \override Fingering.Y-offset =
       #(lambda (grob)
          (let 
           ((s-pos (ly:grob-staff-position grob)))
@@ -74,8 +74,8 @@ vscoul =
 vsmartel =
 #(define-music-function (parser location music) (ly:music?) 
    #{ \once \set fingeringOrientations = #'(left) 
-      \once \override Fingering #'padding = #0.2
-      \once \override Fingering #'Y-offset =
+      \once \override Fingering.padding = #0.2
+      \once \override Fingering.Y-offset =
       #(lambda (grob)
          (let 
           ((s-pos (ly:grob-staff-position grob)))
@@ -93,8 +93,8 @@ vsmartel =
 vflat =
 	#(define-music-function (parser location music) (ly:music?) 
      #{ \once \set fingeringOrientations = #'(left) 
-        \once \override Fingering #'padding = #0.2
-        \once \override Fingering #'Y-offset =
+        \once \override Fingering.padding = #0.2
+        \once \override Fingering.Y-offset =
         		#(lambda (grob)
 					   (let 
 						   ((s-pos (ly:grob-staff-position grob)))
@@ -112,8 +112,8 @@ vflat =
 vferm =
 	#(define-music-function (parser location music) (ly:music?) 
      #{ \once \set fingeringOrientations = #'(left) 
-        \once \override Fingering #'padding = #0.2
-        \once \override Fingering #'Y-offset =
+        \once \override Fingering.padding = #0.2
+        \once \override Fingering.Y-offset =
         		#(lambda (grob)
 					   (let 
 						   ((s-pos (ly:grob-staff-position grob)))

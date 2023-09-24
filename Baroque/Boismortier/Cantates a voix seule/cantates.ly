@@ -10,7 +10,7 @@
 %%  To Public License, Version 2, as published by Sam Hocevar. See
 %%  http://sam.zoy.org/wtfpl/COPYING for more details.
 
-\version "2.16.2"
+\version "2.24.2"
 \include "../../../include/format.ily"
 \include "../../../3rdParty/Viole/ornements-viole.ly"
 

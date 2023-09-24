@@ -62,7 +62,7 @@ corde =
 
 barre =
 {
-	\once \override Staff.Fingering #'text =
+	\once \override Staff.Fingering.text =
 		#(lambda (grob) (fingering::calc-barres-text grob))
 }
 
@@ -95,8 +95,8 @@ barre =
 vmordant =
 	#(define-music-function (parser location music) (ly:music?) 
      #{ \once \set fingeringOrientations = #'(left) 
-        \once \override Fingering #'padding = #0.2
-        \once \override Fingering #'Y-offset =
+        \once \override Fingering.padding = #0.2
+        \once \override Fingering.Y-offset =
         		#(lambda (grob)
 					   (let 
 						   ((s-pos (ly:grob-staff-position grob)))
@@ -114,8 +114,8 @@ vmordant =
 vxmordant =
 	#(define-music-function (parser location music) (ly:music?) 
      #{ \once \set fingeringOrientations = #'(up) 
-        \once \override Fingering #'padding = #0.2
-        \once \override Fingering #'Y-offset =
+        \once \override Fingering.padding = #0.2
+        \once \override Fingering.Y-offset =
         		#(lambda (grob)
 					   (let 
 						   ((s-pos (ly:grob-staff-position grob)))
@@ -152,8 +152,8 @@ vxdmordant =
 vpmordant =
 	#(define-music-function (parser location music) (ly:music?) 
      #{ \once \set fingeringOrientations = #'(left) 
-        \once \override Fingering #'padding = #0.2
-        \once \override Fingering #'Y-offset =
+        \once \override Fingering.padding = #0.2
+        \once \override Fingering.Y-offset =
         		#(lambda (grob)
 					   (let 
 						   ((s-pos (ly:grob-staff-position grob)))
@@ -171,8 +171,8 @@ vpmordant =
 vsmordant =
 	#(define-music-function (parser location music) (ly:music?) 
      #{ \once \set fingeringOrientations = #'(left) 
-        \once \override Fingering #'padding = #0.2
-        \once \override Fingering #'Y-offset =
+        \once \override Fingering.padding = #0.2
+        \once \override Fingering.Y-offset =
         		#(lambda (grob)
 					   (let 
 						   ((s-pos (ly:grob-staff-position grob)))
@@ -217,8 +217,8 @@ vplaintevert =
 vplaintehoriz =
 	#(define-music-function (parser location music) (ly:music?) 
 	     #{ \once \set fingeringOrientations = #'(up) 
-	        \once \override Fingering #'padding = #.75
-	        \once \override Fingering #'X-offset = #0.5
+	        \once \override Fingering.padding = #.75
+	        \once \override Fingering.X-offset = #0.5
 	        $(add-vdg-ornament music 0 1 
 	        		(markup #:pattern 3 X 0 #:musicglyph "scripts.trill_element")) 					$music #}) 
         

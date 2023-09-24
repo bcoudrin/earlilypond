@@ -12,7 +12,7 @@
 
 \relative c {
   \stdClef
-  d4-| d4-| d4-|
+  d4-! d4-! d4-!
   cis4 a4 cis4
   d4 d4 d4
   c4 c4 c4
